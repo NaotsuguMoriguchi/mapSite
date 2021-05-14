@@ -1,0 +1,2587 @@
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Perú</title>
+
+    <style>
+    @keyframes símboloKey {
+        from {
+            margin-left: -190px;
+        }
+
+        to {
+            margin-left: 20px;
+        }
+    }
+
+    input {
+        text-align: center;
+    }
+
+    /* The element to apply the animation to */
+    .símbolo_class {
+        animation-name: símboloKey;
+        margin-left: -190px;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        margin-top: 30px;
+    }
+
+    @keyframes menuKey {
+        from {
+            margin-left: 60px;
+        }
+
+        to {
+            margin-left: 0px;
+        }
+    }
+
+    .menu {
+        writing-mode: vertical-rl;
+        text-orientation: downright;
+        transform: rotate(180deg);
+        font-size: 16px;
+        color: #333;
+        margin-top: 0px;
+        margin-left: 10px;
+        border-radius: 10px;
+        font-size: 16px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    .menuDiv {
+        z-index: 50;
+
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-name: menuKey;
+    }
+
+    .menu:hover {
+        background-color: #a3eded;
+    }
+
+    img {
+        cursor: pointer;
+    }
+
+    .subMenu_1 {
+        width: 210px;
+        height: 53px;
+        background-image: url('assets/submenu1.png');
+        z-index: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 900px;
+        top: 400px
+    }
+
+    .subMenuSel_1 {
+        width: 210px;
+        height: 53px;
+        background-image: url('assets/submenu1.png');
+        z-index: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 900px;
+        top: 400px;
+        animation-name: subMenuSelKey_1;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes subMenuSelKey_1 {
+        from {
+            left: 900px;
+        }
+
+        to {
+            left: 600px;
+        }
+    }
+
+    .subMenuUnSel_1 {
+        width: 210px;
+        height: 53px;
+        background-image: url('assets/submenu1.png');
+        z-index: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 600px;
+        top: 400px;
+        animation-name: subMenuUnSelKey_1;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    img {
+        cursor: pointer;
+    }
+
+    @keyframes subMenuUnSelKey_1 {
+        from {
+            left: 600px;
+        }
+
+        to {
+            left: 900px;
+        }
+    }
+
+    .subMenuSel_2 {
+        width: 331px;
+        height: 53px;
+        background-image: url('assets/submenu2.png');
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 900px;
+        top: 487px;
+        animation-name: subMenuSelKey_2;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes subMenuSelKey_2 {
+        from {
+            left: 900px;
+        }
+
+        to {
+            left: 450px;
+        }
+    }
+
+    .subMenuUnSel_2 {
+        width: 331px;
+        height: 53px;
+        background-image: url('assets/submenu2.png');
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 900px;
+        top: 487px;
+        animation-name: subMenuUnSelKey_2;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    img {
+        cursor: pointer;
+    }
+
+    @keyframes subMenuUnSelKey_2 {
+        from {
+            left: 450px;
+        }
+
+        to {
+            left: 900px;
+        }
+    }
+    </style>
+
+        <script>
+    var locationAry = [[0,"",0,0,0],[1,"Espa\u00f1a",131,298,221,"Espa\u00f1a<br><br>Capital:\tMadrid<br>\r\n                Idioma:\tEspa\u00f1ol<br>\r\n                Superficie:\t505 811 km_<br>\r\n                Poblaci\u00f3n:\t44.108.530<br>\r\n                Densidad:\t87,2 hab.\/km_<br>\r\n                Moneda:\tEuro<br>\r\n                Tipo de gobierno:\tMonarqu\u00eda parlamentaria<br>\r\n                Espa\u00f1a est\u00e1 ubicada en la Europa Occidental, ocupa la mayor parte de la Pen\u00ednsula Ib\u00e9rica y, fuera de ella, dos archipi\u00e9lagos (el de las Islas Canarias en el Oc\u00e9ano Atl\u00e1ntico y el de las Islas Baleares en el Mar Mediterr\u00e1neo) y dos ciudades, Ceuta y Melilla, en el norte de \u00c1frica, aparte de varias islas menores en esta zona y otras cercanas a la pen\u00ednsula.\r\n                Espa\u00f1a est\u00e1 dividida administrativamente en 17 comunidades aut\u00f3nomas o autonom\u00edas y 2 ciudades aut\u00f3nomas. Hay 50 provincias formadas por el territorio peninsular e insular. Ceuta, Melilla y las plazas de soberan\u00eda no forman parte de \u00e9ste r\u00e9gimen. Las provincias son la base sobre las que se asentaron la creaci\u00f3n de las comunidades aut\u00f3nomas. En la pen\u00ednsula Ib\u00e9rica hay multitud de climas debido a la orograf\u00eda y la disposici\u00f3n de las costas, por lo que se puede hablar de microclimas locales en muchas ocasiones. En extensi\u00f3n territorial es el cuarto pa\u00eds de Europa, por detr\u00e1s de Rusia (el mayor, incluso si s\u00f3lo se refiere al territorio contenido en Europa), Ucrania y Francia, y el segundo de la Uni\u00f3n Europea. Los l\u00edmites f\u00edsicos de Espa\u00f1a son  Portugal y el Oc\u00e9ano Atl\u00e1ntico al oeste, el Mar Mediterr\u00e1neo al este, el Estrecho de Gibraltar al sur y los Pirineos, junto con el Golfo de Vizcaya y el Mar Cant\u00e1brico al norte.\r\n                Los principales sistemas monta\u00f1osos son: Pirineos, Sistema Ib\u00e9rico, Cordillera Cant\u00e1brica, Sistema Central y Cordilleras B\u00e9ticas (Subb\u00e9tica y Penib\u00e9tica). Cuenta con 105 aeropuertos situados en las distintas regiones, de ellos 33 son internacionales, siendo el m\u00e1s importante el aeropuerto de Madrid-Barajas.  \r\n                .","assets\/fscommand\/esp1.jpg","assets\/fscommand\/esp2.jpg","assets\/fscommand\/esp3.jpg","assets\/fscommand\/esp4.jpg"],[2,"Portugal",102,332,81,"Portugal<br><br>Capital:\tLisboa<br>\r\n                Idioma:\tPortugu\u00e9s  y Mirand\u00e9s<br>\r\n                Superficie:\t92.391 km_<br>\r\n                Poblaci\u00f3n:\t10.566.212<br>\r\n                Densidad:\t109 hab.\/km_<br>\r\n                Moneda:\tEuro<br>\r\n                Tipo de gobierno:\tRep\u00fablica semipresidencialista<br>\r\n                Portugal  est\u00e1 situado al sur-occidente de Europa y es miembro de la Uni\u00f3n Europea (UE), delimitado al este y norte del pa\u00eds con el Reino de Espa\u00f1a y al sur y oeste por el oc\u00e9ano Atl\u00e1ntico. \r\n                Portugal continental se divide en 18 distritos. Adem\u00e1s de estos, hay dos regiones aut\u00f3nomas: las Azores y Madeira  que conforman Portugal insular, (son islas muy monta\u00f1osas y a cientos de kil\u00f3metros del Portugal Continental). Cada distrito se subdivide en municipios y estos, a su vez, en fregues\u00edas. Est\u00e1 dividido en dos por su r\u00edo principal, el Tajo. Al norte el paisaje es monta\u00f1oso, aunque el punto m\u00e1s alto de Portugal sea el Monte Pico en las Azores. El sur ofrece sobre todo las extensas planicies, y su clima es algo m\u00e1s c\u00e1lido y seco que el norte, m\u00e1s fresco y m\u00e1s lluvioso. Los principales r\u00edos son: el Duero, el Mondego, el Z\u00eazere, el Sado, el Mi\u00f1o y el Guadiana. A pesar de el Tajo es el r\u00edo de mayor longitud en el territorio nacional, es nacido en Espa\u00f1a en la Sierra de Albarrac\u00edn, el mayor r\u00edo exclusivamente portugu\u00e9s es el Mondego nacido en la Serra de Estrella. En cuanto al relieve tambi\u00e9n puede dividirse en dos zonas: Portugal Norte, es monta\u00f1oso y de clima atl\u00e1ntico. (Desde el Tajo hasta Galicia) y  Portugal Sur que es llano y de clima atl\u00e1ntico. (Desde el Tajo hasta el Golfo de C\u00e1diz. \r\n                ","assets\/fscommand\/port1.jpg","assets\/fscommand\/port2.jpg","assets\/fscommand\/port3.jpg","assets\/fscommand\/port4.jpg"],[4,"Italia",429,284,197,"Italia<br><br>Capital:\tRoma<br>\r\n                Idioma:\tItaliano<br>C\r\n                Superficie:\t301.270 km_<br>\r\n                Poblaci\u00f3n:\t58.751.711<br>\r\n                Densidad:\t195 hab.\/km_<br>\r\n                Moneda:\tEuro<br>\r\n                Tipo de gobierno:\tRep\u00fablica<br>\r\n                Italia es un pa\u00eds de Europa del sur, que forma parte de la Uni\u00f3n Europea (UE).  Su territorio consiste principalmente de una pen\u00ednsula alargada (Pen\u00ednsula It\u00e1lica) y de dos grandes islas en el mar Mediterr\u00e1neo: Sicilia y Cerde\u00f1a donde crea masas acu\u00e1ticas importantes, como el Mar Tirreno al noroeste, el Mar Adri\u00e1tico al noreste y el Mar J\u00f3nico al sudeste. Por el norte est\u00e1 bordeado por los Alpes, por donde limita con Francia, Suiza, Austria y Eslovenia. Los estados independientes de San Marino y Ciudad del Vaticano son enclaves dentro del territorio italiano. Italia forma parte del G8 o grupo de las ocho naciones m\u00e1s industrializadas del mundo. Situada en el coraz\u00f3n del antiguo Imperio Romano, est\u00e1 llena de tesoros que reconstruyen la historia de las bases de la civilizaci\u00f3n occidental.\r\n                Se encuentra dividida en 20 regiones administrativas, divididas en provincias y estas a su vez en comunas. De estas, 5 (Valle de Aosta, Friuli-Venecia Julia, Sicilia, Cerde\u00f1a y Trentino - Alto Adigio) tienen un estatus especial en raz\u00f3n de su naturaleza geogr\u00e1fica, cultural o social. Las dem\u00e1s se someten a un estatuto com\u00fan de administraci\u00f3n.\r\n                La cordillera de los Apeninos forma la columna vertebral de la pen\u00ednsula, yendo desde el noroeste hasta donde se unen en los Alpes, la cadena monta\u00f1osa que luego forma un arco el cual encierra a Italia desde el norte. All\u00ed se encuentra tambi\u00e9n una gran llanura aluvial, la llanura Padana (Mil\u00e1n), drenada por el r\u00edo Po y sus varios afluentes provenientes de los Alpes, Apeninos y Dolomitas. Su punto m\u00e1s alto es el Monte Bianco (Mont Blanc) a 4.810 m de altura, pero Italia se asocia m\u00e1s f\u00e1cilmente con dos volcanes famosos: el actualmente inactivo Vesubio cerca de N\u00e1poles y el muy activo Etna en Sicilia.\r\n                Es reconocida por su arte, cultura y numeros\u00edsimos monumentos, entre ellos la torre de Pisa y el Coliseo romano; as\u00ed como por su gastronom\u00eda (platos italianos famosos son la pizza y la pasta), su vino, su estilo de vida, su pintura, su dise\u00f1o, cine, teatro, literatura y m\u00fasica, en particular la \u00f3pera. Lema nacional: \u0093Libertad, igualdad, humanidad\u0094\r\n                ","assets\/fscommand\/ita1.jpg","assets\/fscommand\/ita2.jpg","assets\/fscommand\/ita3.jpg","assets\/fscommand\/ita4.jpg"],[3,"C\u00f3rcega (Italia)",450,373,22,"C\u00f3rcega (Italia)<br><br>Capital:\tAjaccio<br>\r\n                Idioma:\tCorso y Frances<br>\r\n                Superficie:\t8.680 km_<br>\r\n                Poblaci\u00f3n:\t272.000<br>\r\n                Densidad:\t31 hab.\/km_<br>\r\n                Moneda:\t<br>\r\n                Tipo de gobierno:\t<br>\r\n                C\u00f3rcega es una isla situada a 200 km aproximadamente al sureste de la Costa Azul, al oeste de la Toscana y al norte de Cerde\u00f1a. Se sit\u00faa junto con Cerde\u00f1a en una micro-placa continental separada de la de Francia y de Italia llamada \"bloque corso-sardo\". Se conoce a C\u00f3rcega con el nombre de \u0093isla de la Belleza\u0094. Gracias a sus mil kil\u00f3metros de costas, de los cuales aproximadamente 300 son de arena fina,  es un sitio so\u00f1ado para los deportistas n\u00e1uticos, los submarinistas y otros amantes del mar. Pero es igualmente una monta\u00f1a en el mar. Adem\u00e1s, a principios del siglo, algunos la hab\u00edan apodado la isla verde, para diferenciarla de las otras islas mediterr\u00e1neas, mucho m\u00e1s \u00e1ridas. En efecto,  a pesar de su posici\u00f3n meridional y su insolaci\u00f3n, es una isla verde.\r\n                No constituye una regi\u00f3n sino simplemente una colectividad territorial, la \"Colectividad Territorial de C\u00f3rcega\"; esta diversa denominaci\u00f3n se traduce en la pr\u00e1ctica en que goza de mayor poder relativo que las restantes regiones de Francia. Esta colectividad territorial est\u00e1 formada por dos departamentos: Alta C\u00f3rcega (capital: Bastia) y C\u00f3rcega del Sur (capital: Ajaccio).\r\n                Su geograf\u00eda es m\u00e1s bien boscosa y monta\u00f1osa, en la costa sur predominan los acantilados escarpados (Bonifacio). La isla tiene un clima mediterr\u00e1neo, con veranos calurosos y secos e inviernos suaves y lluviosos. La vegetaci\u00f3n natural la formaban bosques mediterr\u00e1neos, masas forestales, y arbustos. Predomina la vegetaci\u00f3n escler\u00f3fila perennifolia, sobre todo encinas y alcornoques. Las monta\u00f1as son mucho m\u00e1s frescas y h\u00famedas.\r\n                ","","","",""],[5,"Croacia",539,294,87,"Croacia<br><br>Capital:\tZagreb<br>\r\n                Idioma:\tcroata<br>\r\n                Superficie:\t56.542 km_<br>\r\n                Poblaci\u00f3n:\t4.495.248<br>\r\n                Densidad:\t83 hab.\/km_<br>\r\n                Moneda:\tkuna<br>\r\n                Tipo de gobierno:\trep\u00fablica<br>\r\n                Croacia es un pa\u00eds europeo, antigua rep\u00fablica de Yugoslavia. Se encuentra en la orilla nororiental del mar Adri\u00e1tico. Limita con Eslovenia y Hungr\u00eda al norte; con Serbia y Montenegro por el este, y con Bosnia-Herzegovina al sur y al este. Se divide en 20 condados y 1 ciudad.\r\n                Esta rep\u00fablica se encorva como un bumer\u00e1n desde las llanuras de la Panonia de Eslabona, a trav\u00e9s del centro monta\u00f1oso, hasta llegar a la pen\u00ednsula de Istria y la accidentada costa adri\u00e1tica. El extremo meridional de la costa croata, incluida la ciudad de Dubrovnik, est\u00e1 separado del resto del pa\u00eds por un saliente de Bosnia-Herzegovina.\r\n                La principal atracci\u00f3n tur\u00edstica de Croacia la constituyen sus playas. Sin embargo, la mayor\u00eda de su litoral consta de grandes guijarros en lugar de arena. Las islas son tan bellas como las hel\u00e9nicas; existen 1.185, pero s\u00f3lo 66 est\u00e1n habitadas. Cuenta con siete excelentes parques naturales. Brijuni, cerca de Pula, es el que est\u00e1 cultivado con m\u00e1s ah\u00ednco; destacan sus bien conservados bosques de encinas mediterr\u00e1neas. El monta\u00f1oso Parque Nacional de Risnjak alberga linces, mientras que los frondosos bosques del Parque Nacional de Paklenica est\u00e1n poblados de insectos, reptiles y aves, entre ellos el buitre leonado, en peligro de extinci\u00f3n. En el Parque Nacional de Plitvice se pueden encontrar osos, lobos y ciervos.\r\n                El clima var\u00eda del mediterr\u00e1neo de la costa adri\u00e1tica al continental del interior. Las soleadas zonas costeras ofrecen veranos c\u00e1lidos y \r\n                ","assets\/fscommand\/croa1.jpg","assets\/fscommand\/croa2.jpg","assets\/fscommand\/croa3.jpg","assets\/fscommand\/croa4.jpg"],[6,"Bosnia Herzegovina",575,313,77,"","assets\/fscommand\/bos1.jpg","assets\/fscommand\/bos2.jpg","assets\/fscommand\/bos3.jpg","assets\/fscommand\/bos4.jpg"],[7,"Rep\u00fablica Federal de Yugoslavia",618,295,86,"Rep\u00fablica Federal de Yugoslavia<br><br>El territorio conocido gen\u00e9ricamente como Yugoslavia es el que agrupa a los actuales estados de Eslovenia, Croacia, Bosnia-Herzegovina, Serbia, Montenegro y Macedonia. Es el suelo de los herederos de los pueblos eslavos meridionales. \r\n                Serbia y el movimiento Pan-eslavo\r\n                La progresiva desaparici\u00f3n del poder otomano en Europa, as\u00ed como los resultados de las guerras balc\u00e1nicas de (1912-13) con su desenlace favorable a Serbia contribuyeron de forma decisiva a aumentar el sentimiento paneslavo de todos los pueblos de la zona, a fin de superar las divisiones pol\u00edticas y religiosas existentes entre ellos, bas\u00e1ndose en la pertenencia a un grupo socio-\u00e9tnico com\u00fan.\r\n                La creaci\u00f3n del nuevo estado surge a partir de la uni\u00f3n de los Reinos de Serbia y Montenegro (ambos independizados del Imperio Otomano en el siglo XIX) y a los que se une una cantidad sustancial de territorio que antiguamente fue parte de Austria-Hungr\u00eda.\r\n                Estas \u00e1reas anteriormente austroh\u00fangaras que formaron parte del nuevo reino inclu\u00edan Croacia, Eslavonia y Vojvodina de la parte h\u00fangara del imperio; Carniola, parte de Estiria y la mayor parte de Dalmacia del lado austr\u00edaco, adem\u00e1s de la provincia imperial de Bosnia y Herzegovina.\r\n                ","assets\/fscommand\/yugo1.jpg","assets\/fscommand\/yugo2.jpg","assets\/fscommand\/yugo3.jpg","assets\/fscommand\/yugo4.jpg"],[8,"Bulgar\u00eda",696,334,102,"Bulgar\u00eda<br><br>Capital:\tSof\u00eda<br>\r\n                Idioma:\tB\u00falgaro<br>\r\n                Superficie:\t110.910 km_<br>\r\n                Poblaci\u00f3n:\t7.537.929<br>\r\n                Densidad:\t67.9 hab.\/km_<br>\r\n                Moneda:\tLev<br>\r\n                Tipo de gobierno:\tRep\u00fablica<br>\r\n                La Rep\u00fablica de Bulgaria es un pa\u00eds europeo ubicado en el sudeste del continente. Colinda al norte con Rumania, al sur con Grecia y Turqu\u00eda y al oeste con Serbia y con la Rep\u00fablica de Macedonia. Su capital es Sof\u00eda.\r\n                Organizaci\u00f3n pol\u00edtico-administrativa<br>\r\n                Art\u00edculo principal: Organizaci\u00f3n pol\u00edtico-administrativa de Bulgaria<br>\r\n                Regiones<br>\r\n                Bulgaria ha sido uno de los pa\u00edses que m\u00e1s problemas econ\u00f3micos ha tenido al tiempo de desligar su econom\u00eda de la antigua URSS, lo que ha mermado sus posibilidades en relaci\u00f3n con otros pa\u00edses del \u00e1rea de Europa central. En la agricultura, dos terceras partes del suelo del pa\u00eds est\u00e1n dedicados al cultivo de cereales, fundamentalmente trigo, ma\u00edz, cebada, centeno y arroz. Los cultivos industriales del tabaco, el algod\u00f3n y el girasol representan una parte m\u00e1s rentable de la organizaci\u00f3n agr\u00edcola. En el proceso de privatizaci\u00f3n de la tierra, se ha sufrido una gran parcelaci\u00f3n que no ha beneficiado a las explotaciones.\r\n                En la industria destaca la siderurgia, las plantas de productos qu\u00edmicos y la producci\u00f3n textil. Carece casi por completo de petr\u00f3leo lo que agrava su dependencia exterior en materia energ\u00e9tica.\r\n                ","assets\/fscommand\/bul1.jpg","assets\/fscommand\/bul2.jpg","assets\/fscommand\/bul3.jpg","assets\/fscommand\/bul4.jpg"],[9,"Francia",253,165,210,"Francia<br><br>Capital:\tPar\u00eds<br>\r\n                Idioma:\tFranc\u00e9s<br>\r\n                Superficie:\t675 417 km_ km_<br>\r\n                Poblaci\u00f3n:\t63 213 894<br>\r\n                Densidad:\t93,59 hab.\/km_<br>\r\n                Moneda:\tEuro<br>\r\n                Tipo de gobierno:\tRep\u00fablica<br>\r\n                Francia, es un pa\u00eds cuyo territorio metropolitano se encuentra en Europa Occidental, incluyendo adem\u00e1s diversos territorios e islas en otros continentes.<br>\r\n                La parte metropolitana limita al suroeste con Espa\u00f1a y Andorra, al oeste con el Oc\u00e9ano Atl\u00e1ntico; al norte con el Canal de la Mancha; al noreste con B\u00e9lgica, Luxemburgo, Alemania y Suiza; al este con M\u00f3naco e Italia; y al sureste con el Mar Mediterr\u00e1neo. En Am\u00e9rica del Sur los territorios coloniales de Francia, tambi\u00e9n limitan territorialmente con Brasil, Surinam y las Antillas Holandesas, entre otros l\u00edmites. Los franceses se refieren com\u00fanmente al territorio metropolitano como el Hex\u00e1gono por su forma geogr\u00e1fica.\r\n                Se divide administrativamente en 26 regiones y sus correspondientes 100 departamentos son de la metr\u00f3poli o de ultramar. Las 22 regiones metropolitanas est\u00e1n constituidas por 96 departamentos metropolitanos, y estos por 329 distritos, los que est\u00e1n conformados por 3879 cantones, y estos a su vez por 36 568 comunas o municipios. Las 4 regiones de ultramar son San Pedro y Miquel\u00f3n, Mayotte, Polinesia Francesa, y Wallis y Futuna. Y 1 colectividad sui g\u00e9neris: Nueva Caledonia las cuales est\u00e1n constituidas por 4 departamentos de ultramar: Reuni\u00f3n, Guadalupe, Martinica y Guayana Francesa.\r\n                1 territorio de ultramar conformado por las Tierras Australes (Kerguelen, Crozet, Islas Saint-Paul y Amsterdam) y las Tierras Ant\u00e1rticas (Tierra Adelia y Estaci\u00f3n Dumont d'Urville), cuya denominaci\u00f3n general es Tierras Australes y Ant\u00e1rticas Francesas\r\n                6 dependencias son islas francesas dispersas y actualmente deshabitadas: Clipperton, en el nor-oriente del Oc\u00e9ano Pac\u00edfico (administrada desde la Polinesia Francesa); y Europa, Gloriosa, Saint Cristopher, Tromelin, y Bassas da India, en el sur-occidente del Oc\u00e9ano \u00cdndico (administradas desde el departamento de la Reuni\u00f3n. Las principales islas son: Nueva Caledonia, C\u00f3rcega, Kerguelen, Reuni\u00f3n, Guadalupe, Lifou, Martinica, Tahit\u00ed, Mar\u00e9 y Mayotte, entre muchas otras.\r\n                Principalmente la capital es prolija en monumentos art\u00edsticos e hist\u00f3ricos, algo que sin embargo no ha sido limitaci\u00f3n para que uno en especial se convierta en su s\u00edmbolo, por encima de los dem\u00e1s: La Torre Eiffel.\r\n                Es un pa\u00eds altamente desarrollado, con la sexta econom\u00eda m\u00e1s grande del mundo y comparte junto con Alemania el nombre de potencia europea. Es considerado como uno de los paises con mayor calidad de vida ya que la poblacion disfruta de un alto grado de servicios, aparte de la sanidad que es una de las mejores del mundo. La edad promedio de las mujeres es el mas alto mundialmente eso refleja una exelente vida, aparte de que francia es una pais de primer mundo y goza de todos los servicios que la poblaci\u00f3n requiere.\r\n                ","assets\/fscommand\/fra1.jpg","assets\/fscommand\/fra2.jpg","assets\/fscommand\/fra3.jpg","assets\/fscommand\/fra4.jpg"],[10,"Eslovenia",537,287,55,"Eslovenia<br><br>Capital:\tLiubliana<br>\r\n                Idioma:\tEsloveno<br>\r\n                Superficie:\t20.273 km_<br>\r\n                Poblaci\u00f3n:\t2.011.070<br>\r\n                Densidad:\t96 hab.\/km_<br>\r\n                Moneda:\tTolar<br>\r\n                Tipo de gobierno:\tRep\u00fablica democr\u00e1tica<br>\r\n                Eslovenia es un pa\u00eds de la Uni\u00f3n Europea que se encuentra en Europa Central. Limita con Italia al oeste, con el mar Adri\u00e1tico por el suroeste, con Croacia por el sur y el este, con Hungr\u00eda por el noreste y con Austria por el norte.\r\n                Es un Estado de la Europa balc\u00e1nica, entre Austria, Hungr\u00eda, Croacia e Italia, que se abre al mar por el golfo de Trieste, a trav\u00e9s del puerto de Koper Capodistra en la pen\u00ednsula de Istria. Es un pa\u00eds con una costa muy peque\u00f1a (Mar Adri\u00e1tico). Pa\u00eds de extensos bosques,  su relieve comprende los montes Karavanke, el macizo cristalino de Pohorje y las mesetas calc\u00e1reas de Notranjsko y Dolenjsko. Los Alpes Julianos, con la mayor elevaci\u00f3n del pa\u00eds, el monte Triglav (2.864 m), conservan huellas de la erosi\u00f3n glaciar cuaternaria, con lagos como el Bled. Las formaciones k\u00e1rsticas, extendidas desde Lubliana hasta el litoral, est\u00e1n excavadas por r\u00edos subterr\u00e1neos y constituyen enormes cavidades, como las cuevas de Postojna, de 19 km de longitud. Aparte del Drava y el Sava, cabe citar el r\u00edo Kolpa. El clima es b\u00e1sicamente alpino, salvo en las zonas pr\u00f3ximas al mar. El clima var\u00eda desde el templado del litoral, hasta el m\u00e1s extremo de las mesetas del este y de las monta\u00f1as, aqu\u00ed con mayores lluvias en verano\r\n                ","assets\/fscommand\/eslo1.jpg","assets\/fscommand\/eslo2.jpg","assets\/fscommand\/eslo3.jpg","assets\/fscommand\/eslo4.jpg"],[11,"Mallorca (Espa\u00f1a)",325,444,22,"Mallorca (Espa\u00f1a)<br><br>Capital:\tPalma de Mallorca<br>\r\n                Idioma:\tcastellano y el catal\u00e1n<br>\r\n                Superficie:\t3.625'75 km_<br>\r\n                Poblaci\u00f3n:\t955.045 habitantes<br>\r\n                Densidad:\t214,84 hab.\/km_<br>\r\n                Moneda:\t<br>\r\n                Tipo de gobierno:\t<br>\r\n                Mallorca es la isla m\u00e1s grande del archipi\u00e9lago balear, siendo este archipi\u00e9lago la comunidad aut\u00f3noma m\u00e1s oriental de Espa\u00f1a, casualmente comunidad aut\u00f3noma uniprovincial. Al igual que Ibiza, Mallorca es un destino tur\u00edstico importante. \r\n                La capital de la isla (y tambi\u00e9n de la comunidad aut\u00f3noma espa\u00f1ola de las Islas Baleares) es Palma de Mallorca o como la conocen los habitantes de la \"Part Forana\" (la parte de la isla que no es la capital): Ciutat. El archipi\u00e9lago de Cabrera, administrativamente, est\u00e1 agrupado con Mallorca, en el municipio de Palma.\r\n                La isla tiene una poblaci\u00f3n censada de 955.045 habitantes (2004), de la cual algo menos de la mitad vive en su capital, Palma de Mallorca. Las ciudades que la siguen en poblaci\u00f3n son Manacor, Inca, Llucmajor, Alc\u00fadia y S\u00f3ller. Al ser el turismo la principal actividad de la isla, recibe anualmente unos 11 millones de visitantes, por lo que en verano, la poblaci\u00f3n de estas ciudades se multiplica.\r\n                La geograf\u00eda f\u00edsica de Mallorca viene configurada por la Sierra de Tramuntana que, al noroeste de la isla, da lugar a impresionantes acantilados que contrastan con las playas del resto de su litoral. El Pla es la f\u00e9rtil llanura central. Al oeste de la llanura central y en el centro de la bah\u00eda de Palma, entre Calvi\u00e0 y Llucmajor est\u00e1 situada la capital, Palma.\r\n                ","assets\/fscommand\/mac1.jpg","assets\/fscommand\/mac2.jpg","assets\/fscommand\/mac3.jpg","assets\/fscommand\/mac4.jpg"],[12,"Carde\u00f1a (Italia)",430,419,40,"Carde\u00f1a (Italia)<br><br>Capital:\tCagliari<br>\r\n                Idioma:\tItaliano y  Sardo<br>\r\n                Superficie:\t24.090 km_<br>\r\n                Poblaci\u00f3n:\t1.637.639<br>\r\n                Densidad:\t68 hab\/km_<br>\r\n                Moneda:\t<br>\r\n                Tipo de gobierno:\t<br>\r\n                Cerde\u00f1a es una isla italiana en el centro del mar mediterr\u00e1neo occidental, situada entre C\u00f3rcega al norte, Italia al este, T\u00fanez al sur, y las islas Baleares al oeste. Es por su extensi\u00f3n, la segunda isla del Mediterr\u00e1neo despu\u00e9s de Sicilia.\r\n                La capital de la regi\u00f3n de Cerde\u00f1a se halla en la ciudad de Cagliari, situada al sur de la isla. Otras ciudades: Sassari, Alguer, Porto Torres, Olbia, Tempio Pausania, La Maddalena, Ozieri, Nuoro, Oristano, Iglesias y Carbonia.\r\n                Es una regi\u00f3n aut\u00f3noma de Italia. La regi\u00f3n est\u00e1 dividida en cuatro provincias: Cagliari, Sassari, Nuoro y Oristano; Cerde\u00f1a es una de las cinco regiones italianas cuyos habitantes han sido reconocidos como un \"popolo\"(pueblo diferenciado) por el Parlamento italiano. Ejemplo: la regi\u00f3n de Veneto\r\n                La isla tiene numerosas y extraordinarias zonas tur\u00edsticas, incluyendo la Costa Esmeralda y Gennargentu. La isla es particularmente famosa por sus playas, pero tambi\u00e9n es rica en otros lugares interesantes. Los restos arqueologicos nuragicos constituyen un aliciente tur\u00edstico.\r\n                ","","","",""],[13,"Sicilia (Italia)",512,491,55,"Sicilia (Italia)<br><br>Capital:\tPalermo<br>\r\n                Idioma:\t<br>\r\n                Superficie:\t25.708 km_<br>\r\n                Poblaci\u00f3n:\t5.015.591<br>\r\n                Densidad:\t195 hab\/km_<br>\r\n                Moneda:\t<br>\r\n                Tipo de gobierno:\t<br>\r\n                Sicilia es la s\u00e9ptima isla europea por dimensiones, la principal isla italiana y la mayor del Mar Mediterr\u00e1neo. Dentro de la Regi\u00f3n aut\u00f3noma se encuentran, adem\u00e1s de la isla hom\u00f3nima, varias islas m\u00e1s peque\u00f1as: los archipi\u00e9lagos de las Islas Eolias a nordeste, las Islas Egadas al oeste, las Islas Pelagie al suroeste, y las islas de Pantelleria al sur y \u00dastica al noroeste.\r\n                El archipi\u00e9lago de Malta geogr\u00e1ficamente es parte integrante de Sicilia. Malta ha estado unida a Sicilia, incluso pol\u00edticamente. La isla de est\u00e1 separada del continente por el Estrecho de Messina.\r\n                Tanto la isla principal como las que la rodean, son de origen volc\u00e1nico. Hoy en d\u00eda sigue habiendo una gran actividad volc\u00e1nica, con varios volcanes en activo: Predominan las zonas monta\u00f1osas: a las cuatro cordilleras principales (Madonie, Nebrodi, Peloritani e Iblei) se suman mesetas, macizos aislados y el Etna, volc\u00e1n activo y pico m\u00e1s alto de la isla.\r\n                Est\u00e1 ba\u00f1ada al norte por el Mar Tirreno, al sur por el Mediterr\u00e1neo, el Estrecho de Mesina la separa de Calabria. Sus r\u00edos son numerosos pero de poco caudal, entre ellos se encuentran el Simeto, el Platani y el Salso. \r\n                ","","","",""],[14,"Grecia",659,399,150,"Grecia<br><br>Capital:\tAtenas<br>\r\n                Idioma:\tGriego<br>\r\n                Superficie:\t131.940 km_<br>\r\n                Poblaci\u00f3n:\t10.668.354<br>\r\n                Densidad:\t81 hab.\/km_<br>\r\n                Moneda:\tEuro<br>\r\n                Tipo de gobierno:\tRep\u00fablica presidencialista<br>\r\n                Grecia (oficialmente Rep\u00fablica Hel\u00e9nica) es un pa\u00eds del sureste de Europa que forma parte de la Uni\u00f3n Europea (UE). Situado en el lado sur de la pen\u00ednsula balc\u00e1nica en el litoral del Mar Mediterr\u00e1neo, hace frontera por tierra con Albania, Antigua Rep\u00fablica Yugoslava de Macedonia, Bulgaria y Turqu\u00eda. Por mar hace frontera con Italia, Turqu\u00eda y Albania. Est\u00e1 dividida administrativamente en 13 regiones, divididas a su vez en prefecturas Lema nacional: \u0093Libertad o Muerte\u0094\r\n                El territorio griego es muy variado. Contando con 9.000 islas, islotes y afloramientos rocosos, siendo segundo de Europa luego de Noruega y d\u00e9cimo detr\u00e1s de Estados Unidos en longitud costera. Es mayoritariamente monta\u00f1osa y cuenta con varias cadenas entre ellas los Alpes Din\u00e1ricos al oeste (los cuales por medio de islas cambian de direcci\u00f3n hacia el sureste al sur del Peloponeso); montes R\u00f3dope, la cadena del Olimpo entre otras. Es el pa\u00eds de Europa con mayor n\u00famero de picos monta\u00f1osos. Su mayor altura se encuentra en la cadena del Olimpo en el monte Mytikas, siendo este el 4to de Europa en prominencia \r\n                Clim\u00e1ticamente se distinguen 3 zonas bien marcadas. Clima Mediterraneo en el Sur y zona de la cuenca del Egeo. Alpino en el oeste (con excepci\u00f3n de la regi\u00f3n de las islas del J\u00f3nico), centro, noroeste y partes del norte. El norte es mayoritariamente de clima continental como en la mayor\u00eda de los pa\u00edses de Europa central (de hecho esta parte del pa\u00eds corresponde geof\u00edsicamente a Europa central).\r\n                ","assets\/fscommand\/gre1.jpg","assets\/fscommand\/gre2.jpg","assets\/fscommand\/gre3.jpg","assets\/fscommand\/gre4.jpg"],[15,"Rep\u00fablica de Macedonia",664,386,47,"Rep\u00fablica de Macedonia<br><br>Capital:\tSkopje<br>\r\n                Idioma:\teslavo-macedonio y alban\u00e9s_<br>\r\n                Superficie:\t25.713 km_<br>\r\n                Poblaci\u00f3n:\t2.022.547<br>\r\n                Densidad:\t81 hab.\/km_<br>\r\n                Moneda:\tDenar macedonio<br>\r\n                Tipo de gobierno:\t<br>\r\n                Macedonia es un estado independiente en la pen\u00ednsula balc\u00e1nica al sudeste de Europa. Debido a la disputa con Grecia por el nombre de Macedonia, internacionalmente se usan las denominaciones ex Rep\u00fablica Yugoslava de Macedonia o Antigua Rep\u00fablica Yugoslava de Macedonia. Est\u00e1 organizada administrativamente en 34 condados y 85 Municipalidades \r\n                Abarca s\u00f3lo una parte de la regi\u00f3n geogr\u00e1fica de la regi\u00f3n hist\u00f3rica de Macedonia. Lo que queda de esta regi\u00f3n est\u00e1 dividido entre la vecina Grecia (con aproximadamente la mitad del total) y Bulgaria (con menos del 10%).\r\n                El terreno es mayoritariamente monta\u00f1oso, situado entre los Sharr y los Osogovske planina alrededor del valle del r\u00edo Vardar. Tres grandes lagos (Lago Ohrid, Lago Prespa y Lago Doiran) se encuentran en la frontera meridional de la Rep\u00fablica, divididos por la frontera con Albania y Grecia. La regi\u00f3n es sismicamente activa y ha sido lugar de terremotos destructivos en el pasado, el m\u00e1s reciente en 1963 cuando Skopje fue severamente da\u00f1ada por un gran terremoto. Las ciudades m\u00e1s grandes del pa\u00eds son Skopje, Bitola, Kumanovo, Prilep y Tetovo \r\n                ","assets\/fscommand\/mac1.jpg","assets\/fscommand\/mac2.jpg","assets\/fscommand\/mac3.jpg","assets\/fscommand\/mac4.jpg"],[16,"Albania",640,380,30,"Albania<br><br>Capital:\tTirana<br>\r\n                Idioma:\tAlban\u00e9s<br>\r\n                Superficie:\t28.748 km_<br>\r\n                Poblaci\u00f3n:\t3.582.205<br>\r\n                Densidad:\t125 hab.\/km_<br>\r\n                Moneda:\tLek<br>\r\n                Tipo de gobierno:\tRep\u00fablica parlamentaria<br>\r\n                Albania es un pa\u00eds mediterr\u00e1neo del sudeste de Europa. Limita con Montenegro al norte, Serbia (Kosovo) al noreste, Macedonia al este y Grecia al sur, tiene una costa al mar Adri\u00e1tico al oeste y otra al mar J\u00f3nico al suroeste. Est\u00e1 dividida en 12 condados o prefecturas, que est\u00e1n a la vez divididos en 36 distritos. La capital tiene un estado especial. Lema nacional: \u0093La fe de los albanos es el albanismo\u0094\r\n                Es un estado muy monta\u00f1oso, con alturas generalizadas de m\u00e1s de 1000 metros. Las tierras bajas s\u00f3lo ocupan 1\/7 del pa\u00eds y se reducen a la llanura litoral y a valles muy estrechos. Sus principales r\u00edos son el Drin, el Vijos\u00eb y el Devoll. La costa frente al mar Adri\u00e1tico es recortada, salpicada por golfos y cabos. Las tierras costeras disfrutan de un clima mediterr\u00e1neo, con temperaturas medias anuales de alrededor de 16\u00baC. En cambio, en el interior se vuelve un clima continental, con medias anuales de 10\u00baC y bruscos contrastes de temperaturas a lo largo del a\u00f1o. En algunas zonas monta\u00f1osas las precipitaciones superan los 2000 mm. La vegetaci\u00f3n mediterr\u00e1nea con maquias y con\u00edferas destacan en la franja litoral mientras que en el interior monta\u00f1oso predominan bosques de con\u00edferas y caducifolias.\r\n                La zona costera tiene est\u00e1 situada entre los Mares Adri\u00e1tico y J\u00f3nico. Sus principales r\u00edos son el Drin, el Vjos\u00eb, el Seman y el Shkumbin.\r\n                ","assets\/fscommand\/alb1.jpg","assets\/fscommand\/alb2.jpg","assets\/fscommand\/alb3.jpg","assets\/fscommand\/alb4.jpg"],[17,"Turqu\u00eda",761,384,46,"Turqu\u00eda<br><br>Capital:\tAnkara<br>\r\n                Idioma:\tTurco<br>\r\n                Superficie:\t780.580 km_<br>\r\n                Poblaci\u00f3n:\t4.319.167 hab.<br>\r\n                Tipo de gobierno:\tRep\u00fablica<br>\r\n                La Rep\u00fablica de Turqu\u00eda, est\u00e1 situada entre Asia (97% de su territorio) y Europa (3% de su territorio). La pen\u00ednsula de Anatolia entre el Mar Negro y el Mediterr\u00e1neo forma el \u00abcoraz\u00f3n\u00bb del pa\u00eds. Limita al noreste con Georgia, al este con Armenia y la Rep\u00fablica aut\u00f3noma de Nax\u00e7iv\u00e1n (perteneciente a Azerbaiy\u00e1n), al sudeste con Ir\u00e1n, al norte con el mar Negro, al oeste con Grecia, el mar Egeo y Bulgaria, y al sur con Iraq, Siria y el mar Mediterr\u00e1neo.\r\n                Es un estado miembro de las Naciones Unidas, OTAN, OSCE, OCDE, OIC, y el Consejo de Europa. Debido a su posici\u00f3n estrat\u00e9gica, ubic\u00e1ndose a medio camino entre Europa y Asia as\u00ed como tres mares, su lema nacional es \u0093Paz en casa, paz en el mundo\u0094.\r\n                Se divide administrativamente en 81 provincias, las cuales est\u00e1n a su vez, divididas en distritos (subprovincias) y comunas. Por otra parte, geogr\u00e1ficamente el pa\u00eds esta dividido en 8 regiones.\r\n                Los r\u00edos de Turqu\u00eda no son navegables ya que son muy r\u00e1pidos. El Kizil Irmak es el r\u00edo m\u00e1s largo del pa\u00eds y desemboca en el mar Negro. Los r\u00edos Tigris y \u00c9ufrates fluyen desde el este de Turqu\u00eda hasta su desembocadura en el golfo P\u00e9rsico. El relieve es en su mayor\u00eda monta\u00f1oso con una estrecha llanura costera y una elevada meseta central (Anatolia)\r\n                ","assets\/fscommand\/tur1.jpg","assets\/fscommand\/tur2.jpg","assets\/fscommand\/tur3.jpg","assets\/fscommand\/tur4.jpg"],[18,"Ruman\u00eda",662,239,145,"","assets\/fscommand\/rum1.jpg","assets\/fscommand\/rum2.jpg","assets\/fscommand\/rum3.jpg","assets\/fscommand\/rum4.jpg"]];
+    var riverAry = [[0,0,0],[1,"R\u00edo Tajo",107,382,94],[3,"R\u00edo Ebro",225,331,69],[5,"R\u00edo Loira",280,243,102],[7,"R\u00edo Sena",332,202,50],[9,"R\u00edo R\u00f3dano",394,224,59],[11,"R\u00edo Po",434,301,78],[13,"R\u00edo Danubio",631,304,163]];
+    var cityAry = [[0,"",0,0,0],[1,"Lisboa",122,387,18],[2,"Madrid",206,387,18],[3,"Pairs",368,217,18],[4,"Roma",525,394,18],[5,"Liubliana",557,290,18],[6,"Zagreb",583,301,18],[7,"Saraievc",605,336,18],[8,"Tirana",645,403,18],[9,"Belgrado",653,315,18],[10,"Skopje",674,394,18],[11,"Bucarest",757,314,18],[12,"Sof\u00eda",719,362,18],[13,"Atenas",704,468,18],[14,"Estambul",773,389,18]];
+    var mountAry = [[0,""],[2,"Volc\u00e1n Mulhac\u00e9n",197,466,23],[3,"Montes Cant\u00e1bricos",153,312,60],[4,"Montes Pirineos",280,312,55],[5,"Montes Apeninos",501,362,93],[6,"Montes Din\u00e1ricos",533,311,109],[7,"Montes C\u00e1rpatos",700,248,54],[8,"Alpes Transilvanos",699,301,82],[9,"Montes Balcanesi",723,342,73],[10,"Sierra Morena",153,432,73],[11,"Montes Din\u00e1ricos",213,382,73],[12,"Monte Etna",5333,342,73],[13,"Mont Blac",453,308,25],[1,"Volc\u00e1n Vesubio",539,404,23]];
+    var songAry = [[0,"",0,0,0,0],[1,"Torre Eiffel, Francia",353,203,20,2,"assets\/fscommand\/lugares\/belen.JPG"],[2,"Catedral de la Sagrada Familia Espa\u00f1ola",290,358,20,2,"assets\/fscommand\/lugares\/banios.JPG"],[3,"Torre Inclina de Pisa, Italia",489,344,20,2,"assets\/fscommand\/lugares\/huascaran.JPG"],[4,"Ciudad del Vaticano, Italia",505,372,20,2,"assets\/fscommand\/lugares\/callejon.JPG"],[5,"Coliseo Romano, Italia",531,389,20,2,"assets\/fscommand\/lugares\/conococha.JPG"],[6,"Parten\u00f3n, Grecia",668,449,20,2,"assets\/fscommand\/lugares\/conococha.JPG"],[7,"Puente Viejo, Florenica Italia",528,342,20,2,"assets\/fscommand\/lugares\/conococha.JPG"],[8,"Monte Olimp Gracia",709,403,20,2,"assets\/fscommand\/lugares\/conococha.JPG"]];
+    var mapPositionArry = [
+        [],        
+    ];
+    var colorAry = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+
+    var colormapAry = [
+        [],
+        [2,9], //1
+        [1], //2
+        [], //3
+        [9,10],//4
+        [6,7,10,],//5
+        [5,7],//6
+        [5,6,8,15,16,18],//7
+        [7,14,15,17,18],//8
+        [1,4],//9
+        [4,5],//10
+        [],//11
+        [],//12
+        [],//13
+        [8,15,16,17],//14
+        [7,8,14,16],//15
+        [7,14,15],//16
+        [8,14],//17
+        [7,8],//18   
+        
+    ];
+
+    var mapPositionArry = [
+        [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], 
+        [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], 
+        [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], [0, 0], 
+    ]
+    function getObj(id) {
+        return document.getElementById(id);
+    }
+
+    function loginOver() {
+        getObj("login").style.background = "url('assets/loginSel.png')";
+    }
+
+    function logOut() {
+        getObj("login").style.background = "url('assets/login.png')";
+    }
+
+    var beforPage = "";
+    var main2mapSet = 0;
+    var scale = 0.73;
+
+    function openPage(page) {
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+
+        for (i = 1; i < 7; i++) {
+            getObj("page_3_" + i).style.display = "none";
+            getObj('submenu2_' + i).src = "assets/submenu2_" + i + ".png";
+            getObj("submenu2_" + i).setAttribute("rol", 0);
+        }
+
+        if (main2mapSet == 0) {
+            main2mapSet = 1;
+
+            for (var i = 1; i < locationAry.length; i = i + 1) {   
+
+                getObj('selmap_' + locationAry[i][0]).style.width = scale *  locationAry[i][4] + 2 + "px";
+
+               
+                mapPositionArry[locationAry[i][0]][0] = scale *  locationAry[i][2] - 228 + 171;
+                mapPositionArry[locationAry[i][0]][1] = scale *  locationAry[i][3] - 31 - 63;
+            }
+        }
+
+        if (page == 2) {
+            getObj("page_1").style.display = "flex";
+            getObj('subMenu_1').className = "subMenuUnSel_1";
+            getObj('subMenu_1').rol = 1;
+
+        }
+
+        if (page == 3) {
+            getObj("page_2").style.display = "flex";
+            getObj("page_2_5").style.display = "";
+            getObj('subMenu_1').className = "subMenuUnSel_1";
+            getObj('subMenu_1').rol = 1;
+
+            var W_element = getObj('map_min_container').offsetWidth;
+            
+
+
+            if (W_element == 500) {
+
+                for (var i = 1; i < locationAry.length; i = i + 1) {
+                    getObj('map_' + i).style.left = scale * getObj('map_' + i).offsetLeft - 258 + 60 + "px";
+                    getObj('map_' + i).style.top = scale * getObj('map_' + i).offsetTop - 29 + "px";
+                    getObj('map_' + i).style.width = scale *  getObj('map_' + i).offsetWidth + 2 + "px";
+
+                }
+
+                getObj('map_min_container').style.width = 499 + "px";
+            }
+        }
+        if (page == 4) {
+            getObj("page_2").style.display = "flex";
+            getObj("page_2_6").style.display = "";
+            getObj("selmapview").style.display = "";
+            getObj('subMenu_1').className = "subMenuUnSel_1";
+            getObj('subMenu_1').rol = 1;
+            getObj("minmap").src = "";
+        }
+        beforPage = page;
+    }
+
+    function openMainPage() {
+        getObj('icoDiv').style.display = "";
+        getObj('right_bar').style.display = "";
+        getObj('subMenu_1').style.display = "flex";
+        getObj('subMenu_2').style.display = "flex";
+
+        getObj('progress').style.display = "none";
+        getObj('main').style.display = "";
+    }
+
+    function page3close() {
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+        selmapClose();
+
+        clockFlag = 0;
+        beforPage = "";
+        getObj("page_2").style.display = "none";
+        getObj("selmapview").style.display = "none";
+    }
+
+    function openProgressPage() {
+        getObj('login').style.display = "none";
+        getObj('progress').style.display = "";
+
+        loading();
+        //openMainPage();
+    }
+
+    var sec = 0;
+
+    function loading() {
+        if (sec > 9) openMainPage();
+
+        sec++;
+        getObj('pg').src = "assets/pg_" + (sec % 6) + ".png";
+        setTimeout(loading, 200);
+
+        getObj('pros').innerHTML = sec * 10 + "%";
+    }
+
+    function subMenu(sel) {
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+
+        if (beforPage == "") {
+            if (sel == 1) {
+
+                if (getObj('subMenu_1').rol == 1 || !getObj('subMenu_1').rol) {
+
+                    getObj('subMenu_1').className = "subMenuSel_1";
+                    getObj('subMenu_1').rol = 2;
+
+                    if (getObj('subMenu_2').rol == 2) {
+                        getObj('subMenu_2').className = "subMenuUnSel_2";
+                        getObj('subMenu_2').rol = 1;
+                    }
+
+                } else {
+                    getObj('subMenu_1').className = "subMenuUnSel_1";
+                    getObj('subMenu_1').rol = 1;
+                }
+
+
+            } else {
+
+                if (getObj('subMenu_2').rol == 1 || !getObj('subMenu_2').rol) {
+
+                    getObj('subMenu_2').className = "subMenuSel_2";
+                    getObj('subMenu_2').rol = 2;
+
+                    if (getObj('subMenu_1').rol == 2) {
+                        getObj('subMenu_1').className = "subMenuUnSel_1";
+                        getObj('subMenu_1').rol = 1;
+                    }
+
+                } else {
+                    getObj('subMenu_2').className = "subMenuUnSel_2";
+                    getObj('subMenu_2').rol = 1;
+                }
+
+            }
+        }
+    }
+    var mountFlag = 1;
+
+    function menuOver(sel) {
+
+        getObj('submenu' + sel).src = "assets/subselmenu" + sel + ".png";
+    }
+
+    function menuOut(sel) {
+
+        getObj('submenu' + sel).src = "assets/submenu" + sel + ".png";
+    }
+
+    function riverover(id, sel) {
+
+        if (mountFlag == 0)
+            getObj(("r_") + id).src = "assets/river_min/" + sel + ".png";
+    }
+
+    function riverout(id, sel) {
+        if (mountFlag == 0)
+            getObj(("r_") + id).src = "assets/river_min/" + sel + ".png";
+    }
+    var riverselcnt = 0;
+    var riverselok = 0;
+
+    function riversel(sel) {
+        if (sel == riverAry[answerIndx][0]) {
+
+            var x = getObj("bien");
+            x.autoplay = true;
+            x.load();
+
+            mountFlag = 1;
+            getObj("play1_1").style.display = "flex";
+            clockFlag = 0;
+            riverselcnt = 0;
+            getObj("p").value = getObj("p").value * 1 + 5;
+
+            riverselok = sel;
+
+        } else {
+
+            if (riverselcnt > 1) {
+                var x = getObj("boing");
+                x.autoplay = true;
+                x.load();
+
+                mountFlag = 1;
+                getObj("play1_1").style.display = "flex";
+                clockFlag = 0;
+                riverselcnt = 0;
+                getObj("p").value = getObj("p").value * 1 - 5;
+
+                if (answerIndx == 0) return false;
+
+                getObj(("r_" + riverAry[answerIndx][0])).src = "assets/river_min/" + (getObj(("r_" + riverAry[
+                    answerIndx][0])).getAttribute("x")) + ".png";
+                riverselok = sel;
+
+            } else {
+                riverselcnt++;
+
+                var x = getObj("mal");
+                x.autoplay = true;
+                x.load();
+
+            }
+        }
+
+    }
+
+    function mountover(sel) {
+        if (mountFlag == 0)
+            getObj(("m_") + sel).src = "assets/mount/m" + sel + "_12.png";
+    }
+
+    function mountout(sel) {
+        if (mountFlag == 0)
+            getObj(("m_") + sel).src = "assets/mount/m" + sel + "_11.png";
+    }
+    var mountcnt = 0;
+
+    function mountsel(sel) {
+
+        if (answerIndx > 0) {
+
+            if (sel == mountAry[answerIndx][0]) {
+                var x = getObj("bien");
+                x.autoplay = true;
+                x.load();
+
+                mountFlag = 1;
+
+                getObj(("m_") + sel).src = "assets/mount/m" + sel + "_12.png";
+
+                getObj("p").value = getObj("p").value * 1 + 15;
+
+                getObj("play1_2").style.display = "flex";
+
+                clockFlag = 0;
+                mountcnt = 0;
+            } else {
+
+                if (mountcnt > 1) {
+                    var x = getObj("boing");
+                    x.autoplay = true;
+                    x.load();
+
+                    mountFlag = 1;
+                    getObj("play1_2").style.display = "flex";
+                    clockFlag = 0;
+                    mountcnt = 0;
+                    getObj("p").value = getObj("p").value * 1 - 5;
+
+                    getObj(("m_") + mountAry[answerIndx][0]).src = "assets/mount/m" + mountAry[answerIndx][0] +
+                        "_12.png";
+
+                    //riverselok = sel;
+
+                } else {
+                    mountcnt++;
+
+                    var x = getObj("mal");
+                    x.autoplay = true;
+                    x.load();
+
+                }
+            }
+
+        }
+
+    }
+
+    function cityover(sel) {
+
+    }
+
+    function cityout(sel) {
+
+
+    }
+
+
+    function fortressover(sel) {
+
+    }
+
+    function fortressyout(sel) {
+
+    }
+
+    function fortresssel(sel) {
+       // getObj(("fs_") + sel).src = "assets/fortresssel.png";
+    }
+
+    function fortover(sel) {
+
+    }
+
+    function fortout(sel) {
+
+    }
+
+    function fortsel(kind, sel) {
+
+        //if(kind == 1){
+        getObj(("f_") + sel).src = "assets/fortresssel.png";
+        //}else{
+        getObj(("f_") + sel).src = "assets/fortsel.png";
+        //}
+
+    }
+
+    var beforeSelColor = 0;
+
+    function selColor(sel) {
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+
+        if (sel != beforeSelColor) {
+            if (beforeSelColor > 0)
+                getObj("color_" + beforeSelColor).src = "assets/color" + beforeSelColor + ".png";
+            getObj("color_" + sel).src = "assets/colorsel" + sel + ".png"
+        } else {
+
+        }
+
+        beforeSelColor = sel;
+    }
+    
+    var colorCnt = 1;
+
+    function colormap(sel) {
+
+        getObj("color_erro").style.display = "none";
+
+        if (mountFlag == 0) {
+
+            flag = 0;
+            for (var i = 0; i < colormapAry[sel].length; i++) {
+
+                if (colorAry[colormapAry[sel][i]] == beforeSelColor || colorAry[sel] > 0) {
+
+                    flag = 1;
+                }
+            }
+            if (flag == 0) {
+                getObj("map_" + sel).src = "assets/map_" + beforeSelColor + "/" + sel + ".png";
+
+                colorAry[sel] = beforeSelColor;
+
+                if (colorCnt == 18) {
+                    clockFlag = 0;
+                }
+
+                colorCnt++;
+            } else {
+                //Selecciona otro color
+                getObj("color_erro").style.display = "";
+            }
+
+        }
+
+    }
+
+    function page1close() {
+
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+
+        clockFlag = 0;
+        beforPage = "";
+        getObj("page_1").style.display = "none";
+
+    }
+
+    function page2close() {
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+
+        beforPage = "";
+        getObj("timeDiv").style.display = "none";
+        getObj("page_2").style.display = "none";
+
+        getObj("page_2_1").style.display = "none";
+        getObj("page_2_2").style.display = "none";
+        getObj("page_2_3").style.display = "none";
+        getObj("page_2_4").style.display = "none";
+        getObj("page_2_5").style.display = "none";
+        getObj("page_2_6").style.display = "none";
+
+        getObj("answerDiv").style.display = "none";
+        getObj("tiempo").style.display = "none";
+        getObj("piezas").style.display = "none";
+        getObj("selmapDiv").style.display = "none";
+
+        getObj("selmapview").style.display = "";
+        getObj("selmapback").style.display = "none";
+        getObj("selmapDiv").style.display = "none";
+        getObj("piezas").style.display = "none";
+        getObj("tiempo").style.display = "none";
+
+        clockFlag = 0;
+
+        playClose1_1();
+        playClose1_2();
+        playClose1_3();
+        playClose1_4();
+    }
+
+    function page2open(sel) {
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+
+        getObj("page_1").style.display = "none";
+        getObj("page_2").style.display = "flex";
+        getObj("page_" + sel).style.display = "";
+
+        var W_element = getObj('rever_min_container').offsetWidth;
+
+        if (W_element == 500) {
+            for (var i = 1; i < riverAry.length; i++) {
+                getObj('r_' + riverAry[i][0]).style.left = scale * getObj('r_' + riverAry[i][0]).offsetLeft - 262 + 65 + "px";
+                getObj('r_' + riverAry[i][0]).style.top = scale * getObj('r_' + riverAry[i][0]).offsetTop - 33 + 5 + "px";
+                getObj('r_' + riverAry[i][0]).style.width = scale * getObj('r_' + riverAry[i][0]).offsetWidth + "px";
+            }
+            getObj('rever_min_container').style.width = 499 + "px";
+        }
+
+        W_element = getObj('mount_min_container').offsetWidth;
+        if (W_element == 500) {
+            for (var i = 1; i < mountAry.length; i = i + 1) {
+                getObj('m_' + mountAry[i][0]).style.left = scale * getObj('m_' + mountAry[i][0]).offsetLeft - 256 + 60 + "px";
+                getObj('m_' + mountAry[i][0]).style.top = scale * getObj('m_' + mountAry[i][0]).offsetTop - 31 + "px";
+                getObj('m_' + mountAry[i][0]).style.width = scale * getObj('m_' + mountAry[i][0]).offsetWidth + "px";
+            }
+            getObj('mount_min_container').style.width = 499 + "px";
+        }
+
+        W_element = getObj('star_min_container').offsetWidth;
+        if (W_element == 500) {
+            for (var i = 1; i < cityAry.length; i = i + 1) {
+                getObj('s_' + cityAry[i][0]).style.left = scale * getObj('s_' + cityAry[i][0]).offsetLeft - 255 + 60 + "px";
+                getObj('s_' + cityAry[i][0]).style.top = scale * getObj('s_' + cityAry[i][0]).offsetTop - 28 + "px";
+                getObj('s_' + cityAry[i][0]).style.width = scale * getObj('s_' + cityAry[i][0]).offsetWidth + "px";
+            }
+            getObj('star_min_container').style.width = 499 + "px";
+        }
+
+        W_element = getObj('fort_min_container').offsetWidth;        
+        if (W_element == 500) {
+            for (var i = 1; i < songAry.length; i = i + 1) {
+                getObj('f_' + songAry[i][0]).style.left = scale * getObj('f_' + songAry[i][0]).offsetLeft - 257 + 60 + "px";
+                getObj('f_' + songAry[i][0]).style.top = scale * getObj('f_' + songAry[i][0]).offsetTop - 27 + "px";
+                getObj('f_' + songAry[i][0]).style.width = 1.5 * getObj('f_' + songAry[i][0]).offsetWidth + "px";
+            }
+            getObj('fort_min_container').style.width = 499 + "px";
+        }
+    }
+    var answerIndx = 0;
+    var clockFlag = 0;
+
+    function play1_1() {
+
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+
+        if (getObj(("r_" + riverAry[answerIndx][0]))) {
+            getObj(("r_" + riverAry[answerIndx][0])).src = "assets/river_min/" + riverAry[answerIndx][0] + ".png";
+
+        }
+        if (getObj(("r_" + riverselok))) {
+
+            getObj(("r_" + riverselok)).src = "assets/river_min/" + riverselok + ".png";
+        }
+
+        getObj("play1_1").style.display = "none";
+        getObj("t").value = 16;
+
+        getObj("timeDiv").style.display = "";
+        getObj("answerDiv").style.display = "";
+
+        answerIndx = Math.round(Math.random() * 100) % (riverAry.length - 1);
+        if(answerIndx == 0)answerIndx = 1;
+
+        getObj("q").innerHTML = riverAry[answerIndx][1];
+        mountFlag = 0;
+        clockFlag = 1;
+        clock();
+    }
+
+    function playClose1_1() {
+        if (getObj(("r_" + riverAry[answerIndx][0]))) {
+            getObj(("r_" + riverAry[answerIndx][0])).src = "assets/river_min/" + riverAry[answerIndx][0] + ".png";
+
+        }
+        if (getObj(("r_" + riverselok))) {
+
+            getObj(("r_" + riverselok)).src = "assets/river_min/" + riverselok + ".png";
+        }
+
+        getObj("p").value = "0";
+
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+
+
+        getObj("play1_1").style.display = "flex";
+        clockFlag = 0;
+        mountFlag = 1;
+        getObj("answerDiv").style.display = "none";
+        getObj("page_2").style.display = "none";
+        getObj("page_2_1").style.display = "none";
+        getObj("timeDiv").style.display = "none";
+
+
+        getObj("page_1").style.display = "flex";
+    }
+
+    function playClose1_2() {
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+
+        getObj("p").value = "0";
+        getObj("play1_2").style.display = "flex";
+        clockFlag = 0;
+        mountFlag = 1;
+
+        getObj("answerDiv").style.display = "none";
+        getObj("page_2").style.display = "none";
+        getObj("page_2_2").style.display = "none";
+        getObj("timeDiv").style.display = "none";
+
+
+        getObj("page_1").style.display = "flex";
+    }
+
+    function playClose1_3() {
+
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+
+        getObj("p").value = 0;
+
+        if (getObj(("s_") + answerIndx)) getObj(("s_") + answerIndx).src = "assets/star.png";
+
+        getObj("play1_3").style.display = "flex";
+        clockFlag = 0;
+        mountFlag = 1;
+        getObj("answerDiv").style.display = "none";
+        getObj("page_2").style.display = "none";
+        getObj("page_2_3").style.display = "none";
+        getObj("timeDiv").style.display = "none";
+
+
+        getObj("page_1").style.display = "flex";
+    }
+
+    function playClose1_5() {
+        getObj("timeDiv").style.display = "none";
+        getObj("p").style.display = "";
+        getObj("ptitle").style.display = "";
+
+        clockFlag = 0;
+        beforPage = "";
+        getObj("page_1").style.display = "none";
+
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+        getObj("play1_5").style.display = "flex";
+        clockFlag = 0;
+        mountFlag = 1;
+        getObj("answerDiv").style.display = "none";
+        getObj("page_2").style.display = "none";
+        getObj("page_2_5").style.display = "none";
+        getObj("timeDiv").style.display = "none";
+
+        for (var i = 1; i < locationAry.length; i++) {
+            getObj("map_" + locationAry[i][0]).src = "assets/map_w/" + locationAry[i][0] + ".png";
+        }
+
+    }
+
+
+    function playClose1_4() {
+
+        if (answerIndx > 1) {
+            getObj(("f_") + answerIndx).src = "assets/fort.png";
+        } else if (answerIndx > 0) {
+            getObj(("f_") + answerIndx).src = "assets/fortress.png";
+        }
+
+        getObj("p").value = "";
+
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+
+        getObj("play1_4").style.display = "flex";
+        clockFlag = 0;
+        mountFlag = 1;
+        getObj("answerDiv").style.display = "none";
+        getObj("page_2").style.display = "none";
+        getObj("page_2_4").style.display = "none";
+        getObj("timeDiv").style.display = "none";
+
+
+        getObj("page_1").style.display = "flex";
+    }
+
+    function clock() {
+        if (clockFlag == 1 && getObj("t").value > 0) {
+            getObj("t").value = getObj("t").value - 1;
+
+            var x = getObj("beep");
+            x.autoplay = true;
+            x.load();
+
+            setTimeout(clock, 1500);
+        }
+    }
+
+    function play1_2() {
+
+        for (var i = 1; i < mountAry.length; i++) {
+            getObj("m_" + mountAry[i][0]).src = "assets/mount/m" + mountAry[i][0] + "_11.png";
+        }
+
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+
+        mountFlag = 0;
+
+        getObj("play1_2").style.display = "none";
+        getObj("t").value = 16;
+
+        getObj("timeDiv").style.display = "";
+        getObj("answerDiv").style.display = "";
+
+        answerIndx = Math.round(Math.random() * 100) % (mountAry.length - 1);
+        if (answerIndx == 0) answerIndx = 1;
+
+        getObj("q").innerHTML = mountAry[answerIndx][1];
+
+
+        clockFlag = 1;
+        clock();
+    }
+
+    function citysel(sel) {
+        if (mountFlag == 0) {
+
+
+
+            if (sel == cityAry[answerIndx][0] && cityAry[answerIndx][0] > 0) {
+
+                var x = getObj("bien");
+                x.autoplay = true;
+                x.load();
+                riverselcnt = 0;
+                mountFlag = 1;
+                getObj("play1_3").style.display = "flex";
+                clockFlag = 0;
+                getObj("p").value = getObj("p").value * 1 + 5;
+                getObj(("s_") + answerIndx).src = "assets/starsel.png";
+                riverselok = sel;
+
+            } else {
+
+                if (riverselcnt > 1) {
+                    var x = getObj("boing");
+                    x.autoplay = true;
+                    x.load();
+
+                    mountFlag = 1;
+                    getObj("play1_3").style.display = "flex";
+                    clockFlag = 0;
+                    riverselcnt = 0;
+                    getObj("p").value = getObj("p").value * 1 - 5;
+
+                    getObj(("s_") + answerIndx).src = "assets/starsel.png";
+
+                    riverselok = sel;
+
+                } else {
+                    var x = getObj("mal");
+                    x.autoplay = true;
+                    x.load();
+                    riverselcnt++;
+                }
+            }
+        }
+    }
+
+    function play1_5_close() {
+        getObj("regresar").style.display = "none";
+
+        getObj("p").style.display = "";
+        getObj("ptitle").style.display = "";
+        getObj("play1_5").style.display = "";
+        getObj("timeDiv").style.display = "none";
+        mountFlag = 1;
+        clockFlag = 0;
+    }
+
+    function play1_5() {
+        getObj("regresar").style.display = "";
+
+        getObj("p").style.display = "none";
+        getObj("ptitle").style.display = "none";
+
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+
+        mountFlag = 0;
+
+        getObj("play1_5").style.display = "none";
+
+        for (i = 1; i < locationAry.length; i++) {
+            getObj("map_" + locationAry[i][0]).src = "assets/map_w/" + locationAry[i][0] + ".png";
+            colorAry[locationAry[i][0]] = 0;
+        }
+        getObj("timeDiv").style.display = "";
+        getObj("t").value = 64;
+        clockFlag = 1;
+        clock();
+
+    }
+
+    function play1_3() {
+        mountFlag = 0;
+
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+
+        getObj("play1_3").style.display = "none";
+        getObj("t").value = 16;
+
+        getObj("timeDiv").style.display = "";
+        getObj("answerDiv").style.display = "";
+
+        if (getObj(("s_") + answerIndx)) getObj(("s_") + answerIndx).src = "assets/star.png";
+
+        answerIndx = Math.round(Math.random() * 100) % (cityAry.length - 1);
+
+        if (answerIndx == 0) answerIndx = 1;
+
+        getObj("q").innerHTML = cityAry[answerIndx][1];
+
+
+        clockFlag = 1;
+        clock();
+    }
+
+    function fortsel(kind, sel) {
+
+
+        if (mountFlag == 0) {
+
+            if (sel == songAry[answerIndx][0] && songAry[answerIndx][0] > 0) {
+
+                var x = getObj("bien");
+                x.autoplay = true;
+                x.load();
+
+                mountFlag = 1;
+                getObj("play1_4").style.display = "flex";
+                clockFlag = 0;
+                getObj("p").value = getObj("p").value * 1 + 5;
+
+                riverselok = sel;
+                riverselcnt = 0;
+                if (answerIndx > 0) {
+                    getObj(("f_") + answerIndx).src = "assets/fortsel.png";
+                } else {
+                    getObj(("f_") + answerIndx).src = "assets/fortresssel.png";
+                }
+
+            } else {
+
+                if (riverselcnt > 1) {
+
+
+                    var x = getObj("boing");
+                    x.autoplay = true;
+                    x.load();
+
+                    mountFlag = 1;
+                    getObj("play1_4").style.display = "flex";
+                    clockFlag = 0;
+                    riverselcnt = 0;
+                    getObj("p").value = getObj("p").value * 1 - 5;
+
+                    if (answerIndx > 0) {
+                        getObj(("f_") + answerIndx).src = "assets/fortsel.png";
+                    } else {
+                        getObj(("f_") + answerIndx).src = "assets/fortresssel.png";
+                    }
+
+
+                    riverselok = sel;
+
+                } else {
+
+                    var x = getObj("mal");
+                    x.autoplay = true;
+                    x.load();
+                    riverselcnt++;
+                }
+            }
+        }
+
+    }
+
+
+    function play1_4() {
+
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+
+        mountFlag = 0;
+
+        getObj("play1_4").style.display = "none";
+        getObj("t").value = 16;
+
+        getObj("timeDiv").style.display = "";
+        getObj("answerDiv").style.display = "";
+
+        if (answerIndx > 1) {
+            getObj(("f_") + answerIndx).src = "assets/fort.png";
+        } else if (answerIndx > 0) {
+            getObj(("f_") + answerIndx).src = "assets/fortress.png";
+        }
+
+        answerIndx = Math.round(Math.random() * 100) % (songAry.length - 1);
+
+        if (answerIndx == 0) answerIndx = 1;
+
+        getObj("q").innerHTML = songAry[answerIndx][1];
+
+
+        clockFlag = 1;
+        clock();
+    }
+
+    function selmapClose() {
+        //alert("Sdfsf");
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+        getObj("minmap").style.display = "none";
+        getObj("selmapview").style.display = "";
+        getObj("selmapback").style.display = "none";
+        getObj("selmapDiv").style.display = "none";
+        getObj("piezas").style.display = "none";
+        getObj("tiempo").style.display = "none";
+    }
+
+    function selmap(sel) {
+        //tiempopiezas
+
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+
+        for (i = 1; i < locationAry.length; i++) {
+            getObj("selmap_" + locationAry[i][0]).style.left = "0px";
+            getObj("selmap_" + locationAry[i][0]).style.top = "0px";
+            getObj("selmap_" + locationAry[i][0]).setAttribute("rol", 0);
+        }
+
+        getObj("selmapview").style.display = "none";
+        getObj("selmapback").style.display = "";
+        getObj("selmapDiv").style.display = "";
+        getObj("pp").value = locationAry.length - 1;
+
+        if (sel == 1) {
+            getObj("minmap").style.display = "none";
+            getObj("piezas").style.display = "";            
+            getObj("minmap").src = "";
+
+        } else if (sel == 2) {
+
+            getObj("piezas").style.display = "";
+            getObj("tiempo").style.display = "";           
+            getObj("tt").value = 73;
+            getObj("minmap").style.display = "none";
+            getObj("minmap").src = "";
+            clockFlag = 1;
+            clock1();
+
+        } else if (sel == 3) {
+
+            getObj("piezas").style.display = "";    
+            getObj("minmap").style.display = "";        
+            getObj("minmap").src = "assets/minmap.png";
+
+        } else if (sel == 4) {
+
+            getObj("piezas").style.display = "";
+            getObj("tiempo").style.display = "";            
+            getObj("tt").value = 73;
+            getObj("minmap").style.display = "";
+            getObj("minmap").src = "assets/minmap.png";
+            clockFlag = 1;
+            clock1();
+
+        }
+
+    }
+
+    function clock1() {
+        if (clockFlag == 1 && getObj("tt").value > 0 && getObj("pp").value > 0) {
+            getObj("tt").value = getObj("tt").value - 1;
+            setTimeout(clock1, 1500);
+        }
+    }
+    beforeX = 0;
+    beforeY = 0;
+    selMoveMap = 0;
+    selMoveIconIndex = 0;
+
+    // start the function for auto code 
+    function handleIconMoveUp(sel) {}
+
+    function handleIconMoveDown(e, sel) {
+
+    }
+
+    function handleIconItemMove(e) {}
+    // end the function for auto code 
+
+
+    
+
+    function selUpMap(sel) {
+        //alert("asdf");
+        window.removeEventListener('mousemove', divMove, true);
+
+        if (selMoveMap == 0) return false;
+        console.log('selmovemap------------>', selMoveMap)
+
+        var div = getObj("selmap_" + selMoveMap);
+
+        getObj("x1").value = mapPositionArry[selMoveMap][0];
+
+        leftAmount = div.style.left;
+        leftAmount = leftAmount.replace("px", "") * 1;
+
+        topAmount = div.style.top;
+        topAmount = topAmount.replace("px", "") * 1;
+
+        getObj("x").value = leftAmount;
+        getObj("y").value = topAmount;
+
+        if (selMoveMap > 0 && getObj("selmap_" + selMoveMap).getAttribute("rol") == 0) {
+            if (mapPositionArry[selMoveMap][0] - 3 < leftAmount && leftAmount < mapPositionArry[selMoveMap][0] + 3) {
+
+                console.log('selmovemap------------>', mapPositionArry[selMoveMap][1]);
+
+                if (mapPositionArry[selMoveMap][1] - 3 < topAmount && topAmount < mapPositionArry[selMoveMap][1] + 3) {
+
+                    var x = getObj("bien");
+                    x.autoplay = true;
+                    x.load();
+
+                    getObj("selmap_" + selMoveMap).setAttribute("rol", 1);
+                    getObj("pp").value = getObj("pp").value * 1 - 1;
+
+                    getObj("selmap_" + selMoveMap).style.left = mapPositionArry[selMoveMap][0] + "px";
+                    getObj("selmap_" + selMoveMap).style.top = mapPositionArry[selMoveMap][1] + "px";
+                }
+            }
+        }
+
+    }
+    window.addEventListener('mouseup', selUpMap, false);
+
+    function selDownMap(e, sel) {
+        selMoveMap = sel;
+        gMouseDownX = e.clientX;
+        gMouseDownY = e.clientY;
+
+        if (selMoveMap > 0 && getObj("selmap_" + selMoveMap).getAttribute("rol") == 0) {
+            var div = getObj("selmap_" + selMoveMap);
+
+            //The following block gets the X offset (the difference between where it starts and where it was clicked)
+            let leftPart = "";
+
+            if (!getObj("selmap_" + selMoveMap).style.left)
+                leftPart += "0px"; //In case this was not defined as 0px explicitly.
+            else
+                leftPart = div.style.left;
+
+            let leftPos = leftPart.indexOf("px");
+            let leftNumString = leftPart.slice(0, leftPos); // Get the X value of the object.
+            gMouseDownOffsetX = gMouseDownX - parseInt(leftNumString, 10);
+
+            //The following block gets the Y offset (the difference between where it starts and where it was clicked)
+            let topPart = "";
+            if (!div.style.top)
+                topPart += "0px"; //In case this was not defined as 0px explicitly.
+            else
+                topPart = div.style.top;
+            let topPos = topPart.indexOf("px");
+            let topNumString = topPart.slice(0, topPos); // Get the Y value of the object.
+            gMouseDownOffsetY = gMouseDownY - parseInt(topNumString, 10);
+
+            window.addEventListener('mousemove', divMove, true);
+        }
+    }
+
+    function divMove(e) {
+        var div = getObj("selmap_" + selMoveMap);
+        div.style.position = 'absolute';
+        let topAmount = e.clientY - gMouseDownOffsetY;
+        div.style.top = topAmount + 'px';
+        let leftAmount = e.clientX - gMouseDownOffsetX;
+        div.style.left = leftAmount + 'px';
+
+    }
+
+    function selmapInfoHide() {
+        getObj("cityDiv").style.display = "none";
+    }
+
+    function selmapinfo(sel) {
+        //getObj("infomap_"+sel) = ;
+        getObj("cityDiv").style.display = "flex";
+        getObj("cityTxt").innerHTML = locationAry[sel][5];
+        getObj("cityImg_1").src = locationAry[sel][6];
+        getObj("cityImg_2").src = locationAry[sel][7];
+        getObj("cityImg_3").src = locationAry[sel][8];
+        getObj("cityImg_4").src = locationAry[sel][9];
+
+    }
+
+    function selmapover(sel) {
+        getObj("infomap_" + sel).src = "assets/map_4/" + sel + ".png"
+    }
+
+    function selmapout(sel) {
+        getObj("infomap_" + sel).src = "assets/map_w/" + sel + ".png"
+    }
+    //onclick="selstarinfo(1)" onmouseover="selstarover(1)" onmouseout="selstarout(1)"
+
+    function selstarinfo(sel) {
+        //getObj("infomap_"+sel) = ;
+    }
+
+    function selstarover(sel) {
+        // getObj("infomap_"+sel).src = "assets/map_4/"+sel+".png"
+        getObj("infstar_" + sel).src = "assets/starsel.png"
+    }
+
+    function selstarout(sel) {
+        getObj("infstar_" + sel).src = "assets/star.png"
+    }
+
+    function inforiverover(id, sel) {
+        getObj(("rr_") + id).src = "assets/river_min/" + sel + ".png";
+    }
+
+    function inforiverout(id, sel) {
+        getObj(("rr_") + id).src = "assets/river_min/" + sel + ".png";
+    }
+
+    function inforiversel(sel) {
+
+
+    }
+
+    function infomountover(sel) {
+
+        getObj(("mm_") + sel).src = "assets/mount/m" + sel + "_12.png";
+    }
+
+    function infomountout(sel) {
+
+        getObj(("mm_") + sel).src = "assets/mount/m" + sel + "_11.png";
+    }
+
+    function infomountsel(sel) {
+
+
+
+    }
+    
+
+    function infofortsel(k, sel) {
+
+        getObj("fortAlam").style.display = "";  
+        getObj("fortAlamImg").src = songAry[sel][6];
+    }
+
+    function infoiover(k, sel) {
+        getObj("i_" + sel).src = "assets/itemSel" + k + ".png";
+    }
+
+    function infoitout(k, sel) {
+        getObj("i_" + sel).src = "assets/item" + k + ".png";
+    }
+
+    function infofortover(k, sel) {
+
+        if (k > 1) {
+            getObj(("ff_") + sel).src = "assets/fortsel.png";
+        } else {
+            getObj(("ff_") + sel).src = "assets/fortresssel.png";
+        }
+    }
+
+    function infofortout(k, sel) {
+        getObj("fortAlam").style.display = "none";
+        if (k > 1) {
+            getObj(("ff_") + sel).src = "assets/fort.png";
+        } else {
+            getObj(("ff_") + sel).src = "assets/fortress.png";
+        }
+    }
+
+    function menuOver1(sel, page) {
+        var x = getObj("be");
+        x.autoplay = true;
+        x.load();
+
+        if (getObj("submenu" + sel).getAttribute("rol") == 0) {
+
+            if (sel == "2_1" || sel == "2_2") {
+
+                getObj('submenu' + sel).src = "assets/subselmenu" + sel + ".gif";
+            } else {
+                getObj('submenu' + sel).src = "assets/subselmenu" + sel + ".png";
+            }
+
+            getObj("submenu" + sel).setAttribute("rol", 1);
+            getObj("page_3_" + page).style.display = "";
+
+        } else {
+            getObj("submenu" + sel).setAttribute("rol", 0);
+            getObj('submenu' + sel).src = "assets/submenu" + sel + ".png";
+            getObj("page_3_" + page).style.display = "none";
+        }
+    }
+
+    function icoClose() {
+        if (getObj("icoDiv").getAttribute("rol") == 0) {
+            getObj("icoDiv").setAttribute("rol", 1);
+
+            getObj("icoDiv").style.backgroundImage = "url('assets/ico_.png')";
+        } else {
+            getObj("icoDiv").setAttribute("rol", 0);
+            getObj("icoDiv").style.backgroundImage = "url('assets/ico.png')";
+        }
+    }
+    var speaktime = 0;
+
+    function icoSpeak() {
+        var x = getObj("explain");
+        x.autoplay = true;
+        x.load();
+        speaktime = 0;
+        setTimeout(icoSpeaker, 100);
+        getObj("icoDiv").style.backgroundImage = "url('assets/ico.png')";
+    }
+
+    function icoSpeaker() {
+        speaktime++;
+        if (speaktime % 2 == 1) {
+            getObj("icoDiv").style.backgroundImage = "url('assets/ico1.png')";
+        } else {
+            getObj("icoDiv").style.backgroundImage = "url('assets/ico.png')";
+        }
+
+        if (speaktime > 60) return false;
+        setTimeout(icoSpeaker, 100);
+    }
+
+    function ayudeShow() {
+        getObj("ayude").style.display = "";
+    }
+
+    function ayudeClose() {
+        getObj('ayude').style.display = "none";
+    }
+    </script>
+
+</head>
+<audio src="assets/sounds/1_mal.mp3" id="mal"></audio>
+
+<audio src="assets/sounds/2_be.mp3" id="be"></audio>
+<audio src="assets/sounds/3_da_clic_y revisaes.mp3" id="explain"></audio>
+<audio src="assets/sounds/4_boing.mp3" id="boing"></audio>
+<audio src="assets/sounds/5_bien.wav" id="bien"></audio>
+<audio src="assets/sounds/6_beep.mp3" id="beep"></audio>
+<audio src="assets/sounds/456.mp3"></audio>
+
+<div style="position: absolute; display:none"> <input type="text" id="x"><input type="text" id="y"><input type="text"
+        id="x1">
+</div>
+
+<body leftmargin="0px" topmargin="opx" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+
+    <div style="position:absolute; left:250px; top:200px; z-index:500; display:none" id="selmapDiv">
+
+                    <img rol="0" src="assets/selmap/1.png" 
+            style="position: absolute; left: 131px; top: 298px; width: 221px" 
+            onmouseup="selUpMap(1)" onmousedown="selDownMap(event, 1)" id="selmap_1"
+            ondragstart="return false;">
+                    <img rol="0" src="assets/selmap/2.png" 
+            style="position: absolute; left: 102px; top: 332px; width: 81px" 
+            onmouseup="selUpMap(2)" onmousedown="selDownMap(event, 2)" id="selmap_2"
+            ondragstart="return false;">
+                    <img rol="0" src="assets/selmap/4.png" 
+            style="position: absolute; left: 429px; top: 284px; width: 197px" 
+            onmouseup="selUpMap(4)" onmousedown="selDownMap(event, 4)" id="selmap_4"
+            ondragstart="return false;">
+                    <img rol="0" src="assets/selmap/3.png" 
+            style="position: absolute; left: 450px; top: 373px; width: 22px" 
+            onmouseup="selUpMap(3)" onmousedown="selDownMap(event, 3)" id="selmap_3"
+            ondragstart="return false;">
+                    <img rol="0" src="assets/selmap/5.png" 
+            style="position: absolute; left: 539px; top: 294px; width: 87px" 
+            onmouseup="selUpMap(5)" onmousedown="selDownMap(event, 5)" id="selmap_5"
+            ondragstart="return false;">
+                    <img rol="0" src="assets/selmap/6.png" 
+            style="position: absolute; left: 575px; top: 313px; width: 77px" 
+            onmouseup="selUpMap(6)" onmousedown="selDownMap(event, 6)" id="selmap_6"
+            ondragstart="return false;">
+                    <img rol="0" src="assets/selmap/7.png" 
+            style="position: absolute; left: 618px; top: 295px; width: 86px" 
+            onmouseup="selUpMap(7)" onmousedown="selDownMap(event, 7)" id="selmap_7"
+            ondragstart="return false;">
+                    <img rol="0" src="assets/selmap/8.png" 
+            style="position: absolute; left: 696px; top: 334px; width: 102px" 
+            onmouseup="selUpMap(8)" onmousedown="selDownMap(event, 8)" id="selmap_8"
+            ondragstart="return false;">
+                    <img rol="0" src="assets/selmap/9.png" 
+            style="position: absolute; left: 253px; top: 165px; width: 210px" 
+            onmouseup="selUpMap(9)" onmousedown="selDownMap(event, 9)" id="selmap_9"
+            ondragstart="return false;">
+                    <img rol="0" src="assets/selmap/10.png" 
+            style="position: absolute; left: 537px; top: 287px; width: 55px" 
+            onmouseup="selUpMap(10)" onmousedown="selDownMap(event, 10)" id="selmap_10"
+            ondragstart="return false;">
+                    <img rol="0" src="assets/selmap/11.png" 
+            style="position: absolute; left: 325px; top: 444px; width: 22px" 
+            onmouseup="selUpMap(11)" onmousedown="selDownMap(event, 11)" id="selmap_11"
+            ondragstart="return false;">
+                    <img rol="0" src="assets/selmap/12.png" 
+            style="position: absolute; left: 430px; top: 419px; width: 40px" 
+            onmouseup="selUpMap(12)" onmousedown="selDownMap(event, 12)" id="selmap_12"
+            ondragstart="return false;">
+                    <img rol="0" src="assets/selmap/13.png" 
+            style="position: absolute; left: 512px; top: 491px; width: 55px" 
+            onmouseup="selUpMap(13)" onmousedown="selDownMap(event, 13)" id="selmap_13"
+            ondragstart="return false;">
+                    <img rol="0" src="assets/selmap/14.png" 
+            style="position: absolute; left: 659px; top: 399px; width: 150px" 
+            onmouseup="selUpMap(14)" onmousedown="selDownMap(event, 14)" id="selmap_14"
+            ondragstart="return false;">
+                    <img rol="0" src="assets/selmap/15.png" 
+            style="position: absolute; left: 664px; top: 386px; width: 47px" 
+            onmouseup="selUpMap(15)" onmousedown="selDownMap(event, 15)" id="selmap_15"
+            ondragstart="return false;">
+                    <img rol="0" src="assets/selmap/16.png" 
+            style="position: absolute; left: 640px; top: 380px; width: 30px" 
+            onmouseup="selUpMap(16)" onmousedown="selDownMap(event, 16)" id="selmap_16"
+            ondragstart="return false;">
+                    <img rol="0" src="assets/selmap/17.png" 
+            style="position: absolute; left: 761px; top: 384px; width: 46px" 
+            onmouseup="selUpMap(17)" onmousedown="selDownMap(event, 17)" id="selmap_17"
+            ondragstart="return false;">
+                    <img rol="0" src="assets/selmap/18.png" 
+            style="position: absolute; left: 662px; top: 239px; width: 145px" 
+            onmouseup="selUpMap(18)" onmousedown="selDownMap(event, 18)" id="selmap_18"
+            ondragstart="return false;">
+        
+    </div>
+
+    <div id="subMenu_1" class="subMenu_1" rol=1 style="display: flex;z-index: 100;">
+        <div><img src="assets/submenu1_1.png"></div>
+        <div style="margin-left:5px; display:flex; align-items:center; justify-content:center">
+            <img src="assets/submenu1_2.png" width="35px" id="submenu1_2" onmouseover="menuOver('1_2')"
+                onmouseout="menuOut('1_2')" onclick="openPage(2)" title="LOCALIZA EN EL MAPA">
+        </div>
+        <div style="margin-left:5px; display:flex; align-items:center; justify-content:center">
+            <img src="assets/submenu1_3.png" height="35px" id="submenu1_3" onmouseover="menuOver('1_3')"
+                onmouseout="menuOut('1_3')" onclick="openPage(3)" title="COLOREA EL MAPA">
+        </div>
+        <div style="margin-left:5px; display:flex; align-items:center; justify-content:center">
+            <img src="assets/submenu1_4.png" width="35px" id="submenu1_4" onmouseover="menuOver('1_4')"
+                onmouseout="menuOut('1_4')" onclick="openPage(4)" title="ARMA EL MAPA">
+        </div>
+        <div style="margin-left:5px; display:flex; align-items:center; justify-content:center">
+            <img src="assets/submenu1_5.png" width="35px" id="submenu1_5" onmouseover="menuOver('1_5')"
+                onmouseout="menuOut('1_5')">
+        </div>
+    </div>
+
+    <div id="subMenu_2" style="width: 331px; height:53px; background-image:url('assets/submenu2.png'); z-index:100; display:flex; 
+    align-items:center; justify-content:center;  position:absolute; left:900px; top:487px" rol=2>
+
+        <div style="display:flex; align-items:center; justify-content:center">
+            <img src="assets/submenu2_1.png" width="46px" id="submenu2_1" onclick="menuOver1('2_1', 1)" rol=0
+                title="REGIONES">
+        </div>
+        <div style="margin-left:5px; display:flex; align-items:center; justify-content:center">
+            <img src="assets/submenu2_2.png" width="46px" id="submenu2_2" onclick="menuOver1('2_2', 2)" rol=0
+                title="PRRINCIPALES MUNICIPIOS">
+        </div>
+        <div style="margin-left:5px; display:flex; align-items:center; justify-content:center">
+            <img src="assets/submenu2_3.png" height="46px" id="submenu2_3" onclick="menuOver1('2_3', 4)" rol=0
+                title="HIDROGRAFíA">
+        </div>
+        <div style="margin-left:5px; display:flex; align-items:center; justify-content:center">
+            <img src="assets/submenu2_4.png" width="46px" id="submenu2_4" onclick="menuOver1('2_4', 3)" rol=0
+                title="QROGRAFíA">
+        </div>
+        <div style="margin-left:5px; display:flex; align-items:center; justify-content:center">
+            <img src="assets/submenu2_5.png" width="46px" id="submenu2_5" onclick="menuOver1('2_5', 5)" rol=0
+                title="LUGARES FAMOSOS">
+        </div>
+        <div style="margin-left:5px; display:flex; align-items:center; justify-content:center">
+            <img src="assets/submenu2_6.png" width="46px" id="submenu2_6" onclick="menuOver1('2_6', 6)" rol=0
+                title="RECURSOS NATURALES Y ACTIVIDADES ECONOMICAS">
+        </div>
+    </div>
+
+    <div id="timeDiv" style="position: absolute; left:664px; top:70px; z-index:400; display:none">
+        <input type="text" value="0" style="width: 50px; height:50px; font-size:32px" id="t">
+        <input type="text" value="0" style="width: 60px; height:50px; font-size:32px" id="p"><br>
+        <a style="color: #8b162a;">Tiempo</a><a style="color: #1c9409;" id="ptitle"> Puntos</a>
+    </div>
+
+    <div id="tiempo" style="position: absolute; left:600px; top:70px; z-index:400; display:none">
+        <input type="text" value="0" style="width: 50px; height:50px; font-size:32px" id="tt"><br>
+        <a style="color: #8b162a;">Tiempo</a>
+    </div>
+    <div id="piezas" style="position: absolute; left:660px; top:70px; z-index:400; display:none">
+        <input type="text" value="0" style="width: 60px; height:50px; font-size:32px" id="pp"><br>
+        <a style="color: #1c9409;"> Piezas</a>
+    </div>
+
+    <div id="answerDiv" style="position: absolute; left:640px; top:303px; z-index:400; display:none">
+
+        <a style="color: #fc052e;">Localiza en el <br> mapa</a><br>
+        <a id="q"> </a>
+    </div>
+
+    <div style="display: flex;">
+
+        <div id="left_bar" style="width: 50px; z-index:100; background-color:#FFF">
+
+        </div>
+
+        <div id="content_bar" style="background-image: url('assets/bg.png'); width:800px; height: 600px; background-repeat: no-repeat;">
+
+            <div id="login"
+                style="background-image: url('assets/login.png'); width:800px; height: 250px; cursor:pointer; color:#FFF; font-size:32px; 
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align:center; padding-top:350px; display:;"
+                onmouseover="loginOver()" onmouseout="logOut()" onclick="openProgressPage()">Click para iniciar</div>
+
+            <div id="progress" style="background-image: url('assets/progress.png'); width:800px; height: 600px; cursor:pointer; color:#FFF; font-size:32px; 
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; display:none">
+                <div style="padding-top: 200px; padding-left:400px; display:flex">
+                    <div style="padding-top: 5px;">cargando</div>
+                    <div style="margin-left: 15px;"><img src="assets/pg_1.png" id="pg"></div>
+                    <div style="font-size: 24px; padding-top:10px; margin-left:10px" id="pros">1%</div>
+                </div>
+
+            </div>
+
+            <div id="main" style="z-index: 50; display: none;">
+
+                <div id="símbolo" class="símbolo_class" style="z-index: 99999999999999999">
+                    <img src="assets/Símbolo.png" width="200px">
+                </div>
+
+                <div id="page_1"
+                    style="margin-left:70px; width:695px; height:441px; background-image:url('assets/submain_.png'); display:none;">
+                    <div style=" writing-mode: vertical-rl; text-orientation: downright; transform: rotate(180deg); font-size:72px; color:#FFF; 
+                     border-radius: 10px;  height:380px">
+
+                    </div>
+                    <div style="padding-top:20px; margin-left:120px; height:400px; width:550px; " id="page_1_1">
+
+                        <div style="height: 30px; margin-top:210px; padding-left:10px; color:#00caff"><img
+                                src="assets/find_4.png" style="vertical-align:middle" onclick="page2open('2_1')">
+                            Hidrogrfia</div>
+                        <div style="height: 30px; margin-top:5px; padding-left:10px; color:#1ccc00"><img
+                                src="assets/find_3.png" style="vertical-align:middle" onclick="page2open('2_2')">
+                            Orografia</div>
+                        <div style="height: 30px; margin-top:5px; padding-left:10px; color:#ff6755"><img
+                                src="assets/find_2.png" style="vertical-align:middle" onclick="page2open('2_3')">
+                            Principales municipios</div>
+                        <div style="height: 30px; margin-top:5px; padding-left:10px; color:#e1c400"><img
+                                src="assets/find_1.png" style="vertical-align:middle" onclick="page2open('2_4')">
+                            Lugares famosos</div>
+                        <div style="height: 30px; margin-top:15px; padding-left:520px; color:#e1c400"><img
+                                src="assets/close.png" style="vertical-align:middle" onclick="page1close()"> </div>
+
+                    </div>
+                </div>
+                <div id="page_2"
+                    style="margin-left:70px; width:695px; height:441px; background-image:url('assets/submain_.png'); display:none; z-index:200">
+                    <div style=" writing-mode: vertical-rl; text-orientation: downright; transform: rotate(180deg); font-size:72px; color:#FFF; 
+                     border-radius: 10px;  height:380px">
+
+                    </div>
+
+                    <div style="padding-top:20px; margin-top:20px; margin-left:120px; height:400px; width:550px; 
+                        background-repeat: no-repeat; background-attachment: fixed;  background-position: center; display: none; "
+                        id="page_2_1">
+
+                        <div style="height: 30px; margin-top:0px; padding-left:12px; color:#8b162a; display:flex">
+                            <div id="play1_1" style="display: flex;">
+                                <div><img src="assets/q.png" style="vertical-align:middle" onclick="play1_1()"></div>
+                                <div style="margin-left: 5px;">Siguiente<br>pregunts </div>
+                            </div>
+                        </div>
+                        <div style="height: 30px; margin-top:15px; padding-left:10px; color:#666"><img
+                                src="assets/back.png" style="vertical-align:middle" onclick="playClose1_1()"> Regresar
+                        </div>
+
+                        <div style="width:500px; height:500px; position:relative; left:150px; top:-90px;
+                        background-repeat: no-repeat; " id="rever_min_container">
+                                                        <img title="Río Colorado" id="r_1" src="assets/river_min/1.png" style="position:absolute;left: 107px;top: 382px; width: 94px;" onmouseover="riverover(1, 2)" x="2" y="1" onmouseout="riverout(1, 1)"  onclick="riversel(1)">
+                            
+                                                        <img title="Río Colorado" id="r_3" src="assets/river_min/3.png" style="position:absolute;left: 225px;top: 331px; width: 69px;" onmouseover="riverover(3, 4)" x="4" y="3" onmouseout="riverout(3, 3)"  onclick="riversel(3)">
+                            
+                                                        <img title="Río Colorado" id="r_5" src="assets/river_min/5.png" style="position:absolute;left: 280px;top: 243px; width: 102px;" onmouseover="riverover(5, 6)" x="6" y="5" onmouseout="riverout(5, 5)"  onclick="riversel(5)">
+                            
+                                                        <img title="Río Colorado" id="r_7" src="assets/river_min/7.png" style="position:absolute;left: 332px;top: 202px; width: 50px;" onmouseover="riverover(7, 8)" x="8" y="7" onmouseout="riverout(7, 7)"  onclick="riversel(7)">
+                            
+                                                        <img title="Río Colorado" id="r_9" src="assets/river_min/9.png" style="position:absolute;left: 394px;top: 224px; width: 59px;" onmouseover="riverover(9, 10)" x="10" y="9" onmouseout="riverout(9, 9)"  onclick="riversel(9)">
+                            
+                                                        <img title="Río Colorado" id="r_11" src="assets/river_min/11.png" style="position:absolute;left: 434px;top: 301px; width: 78px;" onmouseover="riverover(11, 12)" x="12" y="11" onmouseout="riverout(11, 11)"  onclick="riversel(11)">
+                            
+                                                        <img title="Río Colorado" id="r_13" src="assets/river_min/13.png" style="position:absolute;left: 631px;top: 304px; width: 163px;" onmouseover="riverover(13, 14)" x="14" y="13" onmouseout="riverout(13, 13)"  onclick="riversel(13)">
+                            
+                                                        <img src="assets/close.png" style="position:absolute; left:370px; top:355px"
+                                onclick="playClose1_1()">
+                        </div>
+
+
+                    </div>
+
+
+
+                    <div style="padding-top:20px; margin-top:20px; margin-left:120px; height:400px; width:550px; 
+                        background-repeat: no-repeat; background-attachment: fixed;  background-position: center; display: none"
+                        id="page_2_2">
+
+                        <div style="height: 30px; margin-top:0px; padding-left:12px; color:#8b162a; display:flex">
+                            <div style="display: flex;" onclick="play1_2()" id="play1_2">
+                                <div><img src="assets/q.png" style="vertical-align:middle"></div>
+                                <div style="margin-left: 5px;">Siguiente<br>pregunts </div>
+                            </div>
+                        </div>
+                        <div style="height: 30px; margin-top:15px; padding-left:10px; color:#666"><img
+                                src="assets/back.png" style="vertical-align:middle" onclick="playClose1_2()"> Regresar
+                        </div>
+
+                        <div style="width:500px; height:500px; position:relative; left:150px; top:-90px;
+                        background-repeat: no-repeat; " id="mount_min_container">
+
+                                                        <img id="m_2" src="assets/mount/m2_11.png"
+                                style="position:absolute;left: 197px;top: 466px;width: 23px;" onmouseover="mountover(2)"
+                                onmouseout="mountout(2)" onclick="mountsel(2)" title="">
+                            
+                                                        <img id="m_3" src="assets/mount/m3_11.png"
+                                style="position:absolute;left: 153px;top: 312px;width: 60px;" onmouseover="mountover(3)"
+                                onmouseout="mountout(3)" onclick="mountsel(3)" title="">
+                            
+                                                        <img id="m_4" src="assets/mount/m4_11.png"
+                                style="position:absolute;left: 280px;top: 312px;width: 55px;" onmouseover="mountover(4)"
+                                onmouseout="mountout(4)" onclick="mountsel(4)" title="">
+                            
+                                                        <img id="m_5" src="assets/mount/m5_11.png"
+                                style="position:absolute;left: 501px;top: 362px;width: 93px;" onmouseover="mountover(5)"
+                                onmouseout="mountout(5)" onclick="mountsel(5)" title="">
+                            
+                                                        <img id="m_6" src="assets/mount/m6_11.png"
+                                style="position:absolute;left: 533px;top: 311px;width: 109px;" onmouseover="mountover(6)"
+                                onmouseout="mountout(6)" onclick="mountsel(6)" title="">
+                            
+                                                        <img id="m_7" src="assets/mount/m7_11.png"
+                                style="position:absolute;left: 700px;top: 248px;width: 54px;" onmouseover="mountover(7)"
+                                onmouseout="mountout(7)" onclick="mountsel(7)" title="">
+                            
+                                                        <img id="m_8" src="assets/mount/m8_11.png"
+                                style="position:absolute;left: 699px;top: 301px;width: 82px;" onmouseover="mountover(8)"
+                                onmouseout="mountout(8)" onclick="mountsel(8)" title="">
+                            
+                                                        <img id="m_9" src="assets/mount/m9_11.png"
+                                style="position:absolute;left: 723px;top: 342px;width: 73px;" onmouseover="mountover(9)"
+                                onmouseout="mountout(9)" onclick="mountsel(9)" title="">
+                            
+                                                        <img id="m_10" src="assets/mount/m10_11.png"
+                                style="position:absolute;left: 153px;top: 432px;width: 73px;" onmouseover="mountover(10)"
+                                onmouseout="mountout(10)" onclick="mountsel(10)" title="">
+                            
+                                                        <img id="m_11" src="assets/mount/m11_11.png"
+                                style="position:absolute;left: 213px;top: 382px;width: 73px;" onmouseover="mountover(11)"
+                                onmouseout="mountout(11)" onclick="mountsel(11)" title="">
+                            
+                                                        <img id="m_12" src="assets/mount/m12_11.png"
+                                style="position:absolute;left: 5333px;top: 342px;width: 73px;" onmouseover="mountover(12)"
+                                onmouseout="mountout(12)" onclick="mountsel(12)" title="">
+                            
+                                                        <img id="m_13" src="assets/mount/m13_11.png"
+                                style="position:absolute;left: 453px;top: 308px;width: 25px;" onmouseover="mountover(13)"
+                                onmouseout="mountout(13)" onclick="mountsel(13)" title="">
+                            
+                                                        <img id="m_1" src="assets/mount/m1_11.png"
+                                style="position:absolute;left: 539px;top: 404px;width: 23px;" onmouseover="mountover(1)"
+                                onmouseout="mountout(1)" onclick="mountsel(1)" title="">
+                            
+                                                        <img src="assets/close.png" style="position:absolute; left:370px; top:355px"
+                                onclick="playClose1_2()">
+                        </div>
+
+                    </div>
+
+                    <div style="padding-top:20px; margin-top:20px; margin-left:120px; height:400px; width:550px; 
+                        background-repeat: no-repeat; background-attachment: fixed;  background-position: center; display: none"
+                        id="page_2_3">
+
+                        <div style="height: 30px; margin-top:0px; padding-left:12px; color:#8b162a; display:flex">
+                            <div style="display: flex;" onclick="play1_3()" id="play1_3">
+                                <div><img src="assets/q.png" style="vertical-align:middle"></div>
+                                <div style="margin-left: 5px;">Siguiente<br>pregunts </div>
+                            </div>
+                        </div>
+
+                        <div style="height: 30px; margin-top:15px; padding-left:10px; color:#666"><img
+                                src="assets/back.png" style="vertical-align:middle" onclick="playClose1_3()"> Regresar
+                        </div>
+
+                        <div style="width:500px; height:500px; position:relative; left:150px; top:-90px;
+                        background-repeat: no-repeat; " id="star_min_container">
+                                                        <img title="" id="s_1" src="assets/star.png"
+                                style="position: absolute;left: 122px;top: 387px; width:18px" onclick="citysel(1)"
+                                onmouseover="cityover(1)" onmouseout="cityout(1)">
+                                                        <img title="" id="s_2" src="assets/star.png"
+                                style="position: absolute;left: 206px;top: 387px; width:18px" onclick="citysel(2)"
+                                onmouseover="cityover(2)" onmouseout="cityout(2)">
+                                                        <img title="" id="s_3" src="assets/star.png"
+                                style="position: absolute;left: 368px;top: 217px; width:18px" onclick="citysel(3)"
+                                onmouseover="cityover(3)" onmouseout="cityout(3)">
+                                                        <img title="" id="s_4" src="assets/star.png"
+                                style="position: absolute;left: 525px;top: 394px; width:18px" onclick="citysel(4)"
+                                onmouseover="cityover(4)" onmouseout="cityout(4)">
+                                                        <img title="" id="s_5" src="assets/star.png"
+                                style="position: absolute;left: 557px;top: 290px; width:18px" onclick="citysel(5)"
+                                onmouseover="cityover(5)" onmouseout="cityout(5)">
+                                                        <img title="" id="s_6" src="assets/star.png"
+                                style="position: absolute;left: 583px;top: 301px; width:18px" onclick="citysel(6)"
+                                onmouseover="cityover(6)" onmouseout="cityout(6)">
+                                                        <img title="" id="s_7" src="assets/star.png"
+                                style="position: absolute;left: 605px;top: 336px; width:18px" onclick="citysel(7)"
+                                onmouseover="cityover(7)" onmouseout="cityout(7)">
+                                                        <img title="" id="s_8" src="assets/star.png"
+                                style="position: absolute;left: 645px;top: 403px; width:18px" onclick="citysel(8)"
+                                onmouseover="cityover(8)" onmouseout="cityout(8)">
+                                                        <img title="" id="s_9" src="assets/star.png"
+                                style="position: absolute;left: 653px;top: 315px; width:18px" onclick="citysel(9)"
+                                onmouseover="cityover(9)" onmouseout="cityout(9)">
+                                                        <img title="" id="s_10" src="assets/star.png"
+                                style="position: absolute;left: 674px;top: 394px; width:18px" onclick="citysel(10)"
+                                onmouseover="cityover(10)" onmouseout="cityout(10)">
+                                                        <img title="" id="s_11" src="assets/star.png"
+                                style="position: absolute;left: 757px;top: 314px; width:18px" onclick="citysel(11)"
+                                onmouseover="cityover(11)" onmouseout="cityout(11)">
+                                                        <img title="" id="s_12" src="assets/star.png"
+                                style="position: absolute;left: 719px;top: 362px; width:18px" onclick="citysel(12)"
+                                onmouseover="cityover(12)" onmouseout="cityout(12)">
+                                                        <img title="" id="s_13" src="assets/star.png"
+                                style="position: absolute;left: 704px;top: 468px; width:18px" onclick="citysel(13)"
+                                onmouseover="cityover(13)" onmouseout="cityout(13)">
+                                                        <img title="" id="s_14" src="assets/star.png"
+                                style="position: absolute;left: 773px;top: 389px; width:18px" onclick="citysel(14)"
+                                onmouseover="cityover(14)" onmouseout="cityout(14)">
+                            
+
+                            <img src="assets/close.png" style="position:absolute; left:370px; top:355px"
+                                onclick="playClose1_3()">
+                        </div>
+
+                    </div>
+
+                    <div style="padding-top:20px; margin-top:20px; margin-left:120px; height:400px; width:550px; 
+                        background-repeat: no-repeat; background-attachment: fixed;  background-position: center; display: none"
+                        id="page_2_4">
+
+                        <div style="height: 30px; margin-top:0px; padding-left:12px; color:#8b162a; display:flex">
+
+                            <div style="display: flex;" onclick="play1_4()" id="play1_4">
+                                <div><img src="assets/enter.png" style="vertical-align:middle"></div>
+                                <div style="margin-left: 5px;">Siguiente<br>pregunts </div>
+                            </div>
+
+                        </div>
+                        <div style="height: 30px; margin-top:15px; padding-left:10px; color:#666"><img
+                                src="assets/back.png" style="vertical-align:middle" onclick="playClose1_4()"> Regresar
+                        </div>
+
+                        <div style="width:500px; height:500px; position:relative; left:150px; top:-90px;
+                        background-repeat: no-repeat; " id="fort_min_container">
+
+                                                    <img title="" id="f_1" src="assets/fort.png" width="10px"
+                                style="position:absolute;left: 353px;top: 203px;" onclick="fortsel(2, 1)"
+                                onmouseover="fortover(2, 1)" onmouseout="fortover(2, 1)">
+
+                                                    <img title="" id="f_2" src="assets/fort.png" width="10px"
+                                style="position:absolute;left: 290px;top: 358px;" onclick="fortsel(2, 2)"
+                                onmouseover="fortover(2, 2)" onmouseout="fortover(2, 2)">
+
+                                                    <img title="" id="f_3" src="assets/fort.png" width="10px"
+                                style="position:absolute;left: 489px;top: 344px;" onclick="fortsel(2, 3)"
+                                onmouseover="fortover(2, 3)" onmouseout="fortover(2, 3)">
+
+                                                    <img title="" id="f_4" src="assets/fort.png" width="10px"
+                                style="position:absolute;left: 505px;top: 372px;" onclick="fortsel(2, 4)"
+                                onmouseover="fortover(2, 4)" onmouseout="fortover(2, 4)">
+
+                                                    <img title="" id="f_5" src="assets/fort.png" width="10px"
+                                style="position:absolute;left: 531px;top: 389px;" onclick="fortsel(2, 5)"
+                                onmouseover="fortover(2, 5)" onmouseout="fortover(2, 5)">
+
+                                                    <img title="" id="f_6" src="assets/fort.png" width="10px"
+                                style="position:absolute;left: 668px;top: 449px;" onclick="fortsel(2, 6)"
+                                onmouseover="fortover(2, 6)" onmouseout="fortover(2, 6)">
+
+                                                    <img title="" id="f_7" src="assets/fort.png" width="10px"
+                                style="position:absolute;left: 528px;top: 342px;" onclick="fortsel(2, 7)"
+                                onmouseover="fortover(2, 7)" onmouseout="fortover(2, 7)">
+
+                                                    <img title="" id="f_8" src="assets/fort.png" width="10px"
+                                style="position:absolute;left: 709px;top: 403px;" onclick="fortsel(2, 8)"
+                                onmouseover="fortover(2, 8)" onmouseout="fortover(2, 8)">
+
+                            
+
+                            <img src="assets/close.png" style="position:absolute; left:370px; top:355px"
+                                onclick="playClose1_4()">
+                        </div>
+
+                    </div>
+
+                    <div style="padding-top:20px; margin-top:20px; margin-left:120px; height:400px; width:550px; 
+                        background-repeat: no-repeat; background-attachment: fixed;  background-position: center; display: none"
+                        id="page_2_5">
+                        <div>
+                            <div style="height: 30px; margin-top:0px; padding-left:12px; color:#8b162a; display:flex">
+                                <div style="display: flex;" onclick="play1_5()" id="play1_5">
+                                    <div><img src="assets/enter.png" style="vertical-align:middle"></div>
+                                    <div style="margin-left: 5px;">Inicio </div>
+                                </div>
+                            </div>
+                            <div style="height: 30px; margin-top:15px; padding-left:10px; color:#666; "
+                                onclick="play1_5_close()" id="">
+                                <div id="regresar" style="display: none;">
+                                    <img src="assets/back.png" style="vertical-align:middle;"> Regresar
+                                </div>
+                            </div>
+
+                        </div>
+                        <div style="width:500px; height:500px; position:relative; left:150px; top:-90px; 
+                        background-repeat: no-repeat; " id="map_min_container">
+
+                                                        <img title="" id="map_1" src="assets/map_w/1.png"
+                                style="position: absolute;left: 131px;top: 298px; width: 221px" onclick="colormap(1)">
+
+                                                        <img title="" id="map_2" src="assets/map_w/2.png"
+                                style="position: absolute;left: 102px;top: 332px; width: 81px" onclick="colormap(2)">
+
+                                                        <img title="" id="map_4" src="assets/map_w/4.png"
+                                style="position: absolute;left: 429px;top: 284px; width: 197px" onclick="colormap(4)">
+
+                                                        <img title="" id="map_3" src="assets/map_w/3.png"
+                                style="position: absolute;left: 450px;top: 373px; width: 22px" onclick="colormap(3)">
+
+                                                        <img title="" id="map_5" src="assets/map_w/5.png"
+                                style="position: absolute;left: 539px;top: 294px; width: 87px" onclick="colormap(5)">
+
+                                                        <img title="" id="map_6" src="assets/map_w/6.png"
+                                style="position: absolute;left: 575px;top: 313px; width: 77px" onclick="colormap(6)">
+
+                                                        <img title="" id="map_7" src="assets/map_w/7.png"
+                                style="position: absolute;left: 618px;top: 295px; width: 86px" onclick="colormap(7)">
+
+                                                        <img title="" id="map_8" src="assets/map_w/8.png"
+                                style="position: absolute;left: 696px;top: 334px; width: 102px" onclick="colormap(8)">
+
+                                                        <img title="" id="map_9" src="assets/map_w/9.png"
+                                style="position: absolute;left: 253px;top: 165px; width: 210px" onclick="colormap(9)">
+
+                                                        <img title="" id="map_10" src="assets/map_w/10.png"
+                                style="position: absolute;left: 537px;top: 287px; width: 55px" onclick="colormap(10)">
+
+                                                        <img title="" id="map_11" src="assets/map_w/11.png"
+                                style="position: absolute;left: 325px;top: 444px; width: 22px" onclick="colormap(11)">
+
+                                                        <img title="" id="map_12" src="assets/map_w/12.png"
+                                style="position: absolute;left: 430px;top: 419px; width: 40px" onclick="colormap(12)">
+
+                                                        <img title="" id="map_13" src="assets/map_w/13.png"
+                                style="position: absolute;left: 512px;top: 491px; width: 55px" onclick="colormap(13)">
+
+                                                        <img title="" id="map_14" src="assets/map_w/14.png"
+                                style="position: absolute;left: 659px;top: 399px; width: 150px" onclick="colormap(14)">
+
+                                                        <img title="" id="map_15" src="assets/map_w/15.png"
+                                style="position: absolute;left: 664px;top: 386px; width: 47px" onclick="colormap(15)">
+
+                                                        <img title="" id="map_16" src="assets/map_w/16.png"
+                                style="position: absolute;left: 640px;top: 380px; width: 30px" onclick="colormap(16)">
+
+                                                        <img title="" id="map_17" src="assets/map_w/17.png"
+                                style="position: absolute;left: 761px;top: 384px; width: 46px" onclick="colormap(17)">
+
+                                                        <img title="" id="map_18" src="assets/map_w/18.png"
+                                style="position: absolute;left: 662px;top: 239px; width: 145px" onclick="colormap(18)">
+
+                            
+                            <img src="assets/close.png" style="position:absolute; left:370px; top:355px"
+                                onclick="playClose1_5()">
+                        </div>
+                        <div>
+                            <div style="position: absolute; left: 285px; top: 423px; font-family: 'Arial'; color: #666666; display: none;"
+                                id="color_erro">
+                                Selecciona otro<br> color
+                            </div>
+                            <img id="color_1" src="assets/color1.png" style="position: absolute; left:243px; top:489px"
+                                onclick="selColor(1)">
+
+                            <img id="color_2" src="assets/color2.png" style="position: absolute; left:277px; top:489px"
+                                onclick="selColor(2)">
+                            <img id="color_3" src="assets/color3.png" style="position: absolute; left:313px; top:489px"
+                                onclick="selColor(3)">
+                            <img id="color_4" src="assets/color4.png" style="position: absolute; left:349px; top:489px"
+                                onclick="selColor(4)">
+
+
+                        </div>
+                    </div>
+
+                    <div style="padding-top:20px; margin-top:20px; margin-left:120px; height:400px; width:550px; 
+                        background-repeat: no-repeat; background-attachment: fixed;  background-position: center; display: none "
+                        id="page_2_6">
+                        <div>
+                            <div style="height: 30px; margin-top:0px; padding-left:12px; color:#8b162a; display:flex">
+
+                            </div>
+                            <div style="height: 30px; margin-top:15px; padding-left:10px; color:#666"
+                                onclick="playClose1_6()"></div>
+
+                        </div>
+                        <div style="width:500px; height:500px; position:relative; left:150px; top:-90px;
+                        background-repeat: no-repeat; ">
+                            <img src="assets/minmap.png" style="position: absolute;left: -136px;top: 69px;width: 544px; display: none;" id="minmap">
+                            <img src="assets/close.png" style="position:absolute; left:370px; top:355px"
+                                onclick="page3close()">
+                        </div>
+                        <div>
+                            <div style="display: none;" id="selmapback">
+                                <img id="color_1" src="assets/back.png"
+                                    style="position: absolute; left:242px; top:489px" onclick="selmapClose()">
+                            </div>
+                            <div style="display: none;" id="selmapview">
+
+                                <img id="color_1" src="assets/selmap1.png"
+                                    style="position: absolute; left:242px; top:489px" onclick="selmap(1)">
+                                <img id="color_2" src="assets/selmap2.png"
+                                    style="position: absolute; left:281px; top:489px" onclick="selmap(2)">
+                                <img id="color_3" src="assets/selmap3.png"
+                                    style="position: absolute; left:321px; top:490px" onclick="selmap(3)">
+                                <img id="color_4" src="assets/selmap4.png"
+                                    style="position: absolute; left:359px; top:490px" onclick="selmap(4)">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="page_3">
+
+                    <div id="page_3_1" style="display:none">
+                                                <img title="España" id="infomap_1"
+                            src="assets/map_w/1.png"
+                            style="position: absolute;left: 131px; top: 298px; width: 221px"
+                            onclick="selmapinfo(1)"
+                            onmouseover="selmapover(1)"
+                            onmouseout="selmapout(1)">
+                                                <img title="Portugal" id="infomap_2"
+                            src="assets/map_w/2.png"
+                            style="position: absolute;left: 102px; top: 332px; width: 81px"
+                            onclick="selmapinfo(2)"
+                            onmouseover="selmapover(2)"
+                            onmouseout="selmapout(2)">
+                                                <img title="Italia" id="infomap_4"
+                            src="assets/map_w/4.png"
+                            style="position: absolute;left: 429px; top: 284px; width: 197px"
+                            onclick="selmapinfo(3)"
+                            onmouseover="selmapover(4)"
+                            onmouseout="selmapout(4)">
+                                                <img title="Córcega (Italia)" id="infomap_3"
+                            src="assets/map_w/3.png"
+                            style="position: absolute;left: 450px; top: 373px; width: 22px"
+                            onclick="selmapinfo(4)"
+                            onmouseover="selmapover(3)"
+                            onmouseout="selmapout(3)">
+                                                <img title="Croacia" id="infomap_5"
+                            src="assets/map_w/5.png"
+                            style="position: absolute;left: 539px; top: 294px; width: 87px"
+                            onclick="selmapinfo(5)"
+                            onmouseover="selmapover(5)"
+                            onmouseout="selmapout(5)">
+                                                <img title="Bosnia Herzegovina" id="infomap_6"
+                            src="assets/map_w/6.png"
+                            style="position: absolute;left: 575px; top: 313px; width: 77px"
+                            onclick="selmapinfo(6)"
+                            onmouseover="selmapover(6)"
+                            onmouseout="selmapout(6)">
+                                                <img title="República Federal de Yugoslavia" id="infomap_7"
+                            src="assets/map_w/7.png"
+                            style="position: absolute;left: 618px; top: 295px; width: 86px"
+                            onclick="selmapinfo(7)"
+                            onmouseover="selmapover(7)"
+                            onmouseout="selmapout(7)">
+                                                <img title="Bulgaría" id="infomap_8"
+                            src="assets/map_w/8.png"
+                            style="position: absolute;left: 696px; top: 334px; width: 102px"
+                            onclick="selmapinfo(8)"
+                            onmouseover="selmapover(8)"
+                            onmouseout="selmapout(8)">
+                                                <img title="Francia" id="infomap_9"
+                            src="assets/map_w/9.png"
+                            style="position: absolute;left: 253px; top: 165px; width: 210px"
+                            onclick="selmapinfo(9)"
+                            onmouseover="selmapover(9)"
+                            onmouseout="selmapout(9)">
+                                                <img title="Eslovenia" id="infomap_10"
+                            src="assets/map_w/10.png"
+                            style="position: absolute;left: 537px; top: 287px; width: 55px"
+                            onclick="selmapinfo(10)"
+                            onmouseover="selmapover(10)"
+                            onmouseout="selmapout(10)">
+                                                <img title="Mallorca (España)" id="infomap_11"
+                            src="assets/map_w/11.png"
+                            style="position: absolute;left: 325px; top: 444px; width: 22px"
+                            onclick="selmapinfo(11)"
+                            onmouseover="selmapover(11)"
+                            onmouseout="selmapout(11)">
+                                                <img title="Cardeña (Italia)" id="infomap_12"
+                            src="assets/map_w/12.png"
+                            style="position: absolute;left: 430px; top: 419px; width: 40px"
+                            onclick="selmapinfo(12)"
+                            onmouseover="selmapover(12)"
+                            onmouseout="selmapout(12)">
+                                                <img title="Sicilia (Italia)" id="infomap_13"
+                            src="assets/map_w/13.png"
+                            style="position: absolute;left: 512px; top: 491px; width: 55px"
+                            onclick="selmapinfo(13)"
+                            onmouseover="selmapover(13)"
+                            onmouseout="selmapout(13)">
+                                                <img title="Grecia" id="infomap_14"
+                            src="assets/map_w/14.png"
+                            style="position: absolute;left: 659px; top: 399px; width: 150px"
+                            onclick="selmapinfo(14)"
+                            onmouseover="selmapover(14)"
+                            onmouseout="selmapout(14)">
+                                                <img title="República de Macedonia" id="infomap_15"
+                            src="assets/map_w/15.png"
+                            style="position: absolute;left: 664px; top: 386px; width: 47px"
+                            onclick="selmapinfo(15)"
+                            onmouseover="selmapover(15)"
+                            onmouseout="selmapout(15)">
+                                                <img title="Albania" id="infomap_16"
+                            src="assets/map_w/16.png"
+                            style="position: absolute;left: 640px; top: 380px; width: 30px"
+                            onclick="selmapinfo(16)"
+                            onmouseover="selmapover(16)"
+                            onmouseout="selmapout(16)">
+                                                <img title="Turquía" id="infomap_17"
+                            src="assets/map_w/17.png"
+                            style="position: absolute;left: 761px; top: 384px; width: 46px"
+                            onclick="selmapinfo(17)"
+                            onmouseover="selmapover(17)"
+                            onmouseout="selmapout(17)">
+                                                <img title="Rumanía" id="infomap_18"
+                            src="assets/map_w/18.png"
+                            style="position: absolute;left: 662px; top: 239px; width: 145px"
+                            onclick="selmapinfo(18)"
+                            onmouseover="selmapover(18)"
+                            onmouseout="selmapout(18)">
+                                            </div>
+
+                    <div id="page_3_3" style="display: none;">
+                        
+                        <img title="Volcán Mulhacén" id="mm_2"
+                            src="assets/mount/m2_11.png"
+                            style="position:absolute;left: 197px;top: 466px;width:23px;"
+                            onmouseover="infomountover(2)"
+                            onmouseout="infomountout(2)"
+                            onclick="infomountsel(2)">
+
+                        
+                        <img title="Montes Cantábricos" id="mm_3"
+                            src="assets/mount/m3_11.png"
+                            style="position:absolute;left: 153px;top: 312px;width:60px;"
+                            onmouseover="infomountover(3)"
+                            onmouseout="infomountout(3)"
+                            onclick="infomountsel(3)">
+
+                        
+                        <img title="Montes Pirineos" id="mm_4"
+                            src="assets/mount/m4_11.png"
+                            style="position:absolute;left: 280px;top: 312px;width:55px;"
+                            onmouseover="infomountover(4)"
+                            onmouseout="infomountout(4)"
+                            onclick="infomountsel(4)">
+
+                        
+                        <img title="Montes Apeninos" id="mm_5"
+                            src="assets/mount/m5_11.png"
+                            style="position:absolute;left: 501px;top: 362px;width:93px;"
+                            onmouseover="infomountover(5)"
+                            onmouseout="infomountout(5)"
+                            onclick="infomountsel(5)">
+
+                        
+                        <img title="Montes Dináricos" id="mm_6"
+                            src="assets/mount/m6_11.png"
+                            style="position:absolute;left: 533px;top: 311px;width:109px;"
+                            onmouseover="infomountover(6)"
+                            onmouseout="infomountout(6)"
+                            onclick="infomountsel(6)">
+
+                        
+                        <img title="Montes Cárpatos" id="mm_7"
+                            src="assets/mount/m7_11.png"
+                            style="position:absolute;left: 700px;top: 248px;width:54px;"
+                            onmouseover="infomountover(7)"
+                            onmouseout="infomountout(7)"
+                            onclick="infomountsel(7)">
+
+                        
+                        <img title="Alpes Transilvanos" id="mm_8"
+                            src="assets/mount/m8_11.png"
+                            style="position:absolute;left: 699px;top: 301px;width:82px;"
+                            onmouseover="infomountover(8)"
+                            onmouseout="infomountout(8)"
+                            onclick="infomountsel(8)">
+
+                        
+                        <img title="Montes Balcanesi" id="mm_9"
+                            src="assets/mount/m9_11.png"
+                            style="position:absolute;left: 723px;top: 342px;width:73px;"
+                            onmouseover="infomountover(9)"
+                            onmouseout="infomountout(9)"
+                            onclick="infomountsel(9)">
+
+                        
+                        <img title="Sierra Morena" id="mm_10"
+                            src="assets/mount/m10_11.png"
+                            style="position:absolute;left: 153px;top: 432px;width:73px;"
+                            onmouseover="infomountover(10)"
+                            onmouseout="infomountout(10)"
+                            onclick="infomountsel(10)">
+
+                        
+                        <img title="Montes Dináricos" id="mm_11"
+                            src="assets/mount/m11_11.png"
+                            style="position:absolute;left: 213px;top: 382px;width:73px;"
+                            onmouseover="infomountover(11)"
+                            onmouseout="infomountout(11)"
+                            onclick="infomountsel(11)">
+
+                        
+                        <img title="Monte Etna" id="mm_12"
+                            src="assets/mount/m12_11.png"
+                            style="position:absolute;left: 5333px;top: 342px;width:73px;"
+                            onmouseover="infomountover(12)"
+                            onmouseout="infomountout(12)"
+                            onclick="infomountsel(12)">
+
+                        
+                        <img title="Mont Blac" id="mm_13"
+                            src="assets/mount/m13_11.png"
+                            style="position:absolute;left: 453px;top: 308px;width:25px;"
+                            onmouseover="infomountover(13)"
+                            onmouseout="infomountout(13)"
+                            onclick="infomountsel(13)">
+
+                        
+                        <img title="Volcán Vesubio" id="mm_1"
+                            src="assets/mount/m1_11.png"
+                            style="position:absolute;left: 539px;top: 404px;width:23px;"
+                            onmouseover="infomountover(1)"
+                            onmouseout="infomountout(1)"
+                            onclick="infomountsel(1)">
+
+                                            </div>
+
+                    <div id="page_3_2" style="display:none">
+
+                        
+                        <img title="Lisboa" id="infstar_1" src="assets/star.png"
+                            style="position: absolute;left: 122px;top: 387px; width: 18px"
+                            onclick="selstarinfo(1)" onmouseover="selstarover(1)"
+                            onmouseout="selstarout(1)">
+
+                        
+                        <img title="Madrid" id="infstar_2" src="assets/star.png"
+                            style="position: absolute;left: 206px;top: 387px; width: 18px"
+                            onclick="selstarinfo(2)" onmouseover="selstarover(2)"
+                            onmouseout="selstarout(2)">
+
+                        
+                        <img title="Pairs" id="infstar_3" src="assets/star.png"
+                            style="position: absolute;left: 368px;top: 217px; width: 18px"
+                            onclick="selstarinfo(3)" onmouseover="selstarover(3)"
+                            onmouseout="selstarout(3)">
+
+                        
+                        <img title="Roma" id="infstar_4" src="assets/star.png"
+                            style="position: absolute;left: 525px;top: 394px; width: 18px"
+                            onclick="selstarinfo(4)" onmouseover="selstarover(4)"
+                            onmouseout="selstarout(4)">
+
+                        
+                        <img title="Liubliana" id="infstar_5" src="assets/star.png"
+                            style="position: absolute;left: 557px;top: 290px; width: 18px"
+                            onclick="selstarinfo(5)" onmouseover="selstarover(5)"
+                            onmouseout="selstarout(5)">
+
+                        
+                        <img title="Zagreb" id="infstar_6" src="assets/star.png"
+                            style="position: absolute;left: 583px;top: 301px; width: 18px"
+                            onclick="selstarinfo(6)" onmouseover="selstarover(6)"
+                            onmouseout="selstarout(6)">
+
+                        
+                        <img title="Saraievc" id="infstar_7" src="assets/star.png"
+                            style="position: absolute;left: 605px;top: 336px; width: 18px"
+                            onclick="selstarinfo(7)" onmouseover="selstarover(7)"
+                            onmouseout="selstarout(7)">
+
+                        
+                        <img title="Tirana" id="infstar_8" src="assets/star.png"
+                            style="position: absolute;left: 645px;top: 403px; width: 18px"
+                            onclick="selstarinfo(8)" onmouseover="selstarover(8)"
+                            onmouseout="selstarout(8)">
+
+                        
+                        <img title="Belgrado" id="infstar_9" src="assets/star.png"
+                            style="position: absolute;left: 653px;top: 315px; width: 18px"
+                            onclick="selstarinfo(9)" onmouseover="selstarover(9)"
+                            onmouseout="selstarout(9)">
+
+                        
+                        <img title="Skopje" id="infstar_10" src="assets/star.png"
+                            style="position: absolute;left: 674px;top: 394px; width: 18px"
+                            onclick="selstarinfo(10)" onmouseover="selstarover(10)"
+                            onmouseout="selstarout(10)">
+
+                        
+                        <img title="Bucarest" id="infstar_11" src="assets/star.png"
+                            style="position: absolute;left: 757px;top: 314px; width: 18px"
+                            onclick="selstarinfo(11)" onmouseover="selstarover(11)"
+                            onmouseout="selstarout(11)">
+
+                        
+                        <img title="Sofía" id="infstar_12" src="assets/star.png"
+                            style="position: absolute;left: 719px;top: 362px; width: 18px"
+                            onclick="selstarinfo(12)" onmouseover="selstarover(12)"
+                            onmouseout="selstarout(12)">
+
+                        
+                        <img title="Atenas" id="infstar_13" src="assets/star.png"
+                            style="position: absolute;left: 704px;top: 468px; width: 18px"
+                            onclick="selstarinfo(13)" onmouseover="selstarover(13)"
+                            onmouseout="selstarout(13)">
+
+                        
+                        <img title="Estambul" id="infstar_14" src="assets/star.png"
+                            style="position: absolute;left: 773px;top: 389px; width: 18px"
+                            onclick="selstarinfo(14)" onmouseover="selstarover(14)"
+                            onmouseout="selstarout(14)">
+
+                                            </div>
+                    <div id="page_3_4" style="display: none;">
+
+                                                <img title="Río Tajo" id="rr_1"
+                            src="assets/river_min/1.png"
+                            style="position:absolute;left: 107px;top: 382px;width: 94px;"
+                            x="2" y="1"
+                            onmouseover="inforiverover(1, 2)"
+                            onmouseout="inforiverout(1, 1)"
+                            onclick="inforiversel(1)">
+
+                                                <img title="Río Ebro" id="rr_3"
+                            src="assets/river_min/3.png"
+                            style="position:absolute;left: 225px;top: 331px;width: 69px;"
+                            x="4" y="3"
+                            onmouseover="inforiverover(3, 4)"
+                            onmouseout="inforiverout(3, 3)"
+                            onclick="inforiversel(3)">
+
+                                                <img title="Río Loira" id="rr_5"
+                            src="assets/river_min/5.png"
+                            style="position:absolute;left: 280px;top: 243px;width: 102px;"
+                            x="6" y="5"
+                            onmouseover="inforiverover(5, 6)"
+                            onmouseout="inforiverout(5, 5)"
+                            onclick="inforiversel(5)">
+
+                                                <img title="Río Sena" id="rr_7"
+                            src="assets/river_min/7.png"
+                            style="position:absolute;left: 332px;top: 202px;width: 50px;"
+                            x="8" y="7"
+                            onmouseover="inforiverover(7, 8)"
+                            onmouseout="inforiverout(7, 7)"
+                            onclick="inforiversel(7)">
+
+                                                <img title="Río Ródano" id="rr_9"
+                            src="assets/river_min/9.png"
+                            style="position:absolute;left: 394px;top: 224px;width: 59px;"
+                            x="10" y="9"
+                            onmouseover="inforiverover(9, 10)"
+                            onmouseout="inforiverout(9, 9)"
+                            onclick="inforiversel(9)">
+
+                                                <img title="Río Po" id="rr_11"
+                            src="assets/river_min/11.png"
+                            style="position:absolute;left: 434px;top: 301px;width: 78px;"
+                            x="12" y="11"
+                            onmouseover="inforiverover(11, 12)"
+                            onmouseout="inforiverout(11, 11)"
+                            onclick="inforiversel(11)">
+
+                                                <img title="Río Danubio" id="rr_13"
+                            src="assets/river_min/13.png"
+                            style="position:absolute;left: 631px;top: 304px;width: 163px;"
+                            x="14" y="13"
+                            onmouseover="inforiverover(13, 14)"
+                            onmouseout="inforiverout(13, 13)"
+                            onclick="inforiversel(13)">
+
+                        
+                    </div>
+
+                    <div id="page_3_5" style="display: none">
+                                                <img title="Torre Eiffel, Francia" id="ff_1"
+                            src="assets/fort.png"
+                            style="position:absolute;left: 353px; top: 203px; width: 20px"
+                            onclick="infofortsel(2, 1)"
+                            onmouseover="infofortover(2, 1)"
+                            onmouseout="infofortout(2, 1)">
+                                                <img title="Catedral de la Sagrada Familia Española" id="ff_2"
+                            src="assets/fort.png"
+                            style="position:absolute;left: 290px; top: 358px; width: 20px"
+                            onclick="infofortsel(2, 2)"
+                            onmouseover="infofortover(2, 2)"
+                            onmouseout="infofortout(2, 2)">
+                                                <img title="Torre Inclina de Pisa, Italia" id="ff_3"
+                            src="assets/fort.png"
+                            style="position:absolute;left: 489px; top: 344px; width: 20px"
+                            onclick="infofortsel(2, 3)"
+                            onmouseover="infofortover(2, 3)"
+                            onmouseout="infofortout(2, 3)">
+                                                <img title="Ciudad del Vaticano, Italia" id="ff_4"
+                            src="assets/fort.png"
+                            style="position:absolute;left: 505px; top: 372px; width: 20px"
+                            onclick="infofortsel(2, 4)"
+                            onmouseover="infofortover(2, 4)"
+                            onmouseout="infofortout(2, 4)">
+                                                <img title="Coliseo Romano, Italia" id="ff_5"
+                            src="assets/fort.png"
+                            style="position:absolute;left: 531px; top: 389px; width: 20px"
+                            onclick="infofortsel(2, 5)"
+                            onmouseover="infofortover(2, 5)"
+                            onmouseout="infofortout(2, 5)">
+                                                <img title="Partenón, Grecia" id="ff_6"
+                            src="assets/fort.png"
+                            style="position:absolute;left: 668px; top: 449px; width: 20px"
+                            onclick="infofortsel(2, 6)"
+                            onmouseover="infofortover(2, 6)"
+                            onmouseout="infofortout(2, 6)">
+                                                <img title="Puente Viejo, Florenica Italia" id="ff_7"
+                            src="assets/fort.png"
+                            style="position:absolute;left: 528px; top: 342px; width: 20px"
+                            onclick="infofortsel(2, 7)"
+                            onmouseover="infofortover(2, 7)"
+                            onmouseout="infofortout(2, 7)">
+                                                <img title="Monte Olimp Gracia" id="ff_8"
+                            src="assets/fort.png"
+                            style="position:absolute;left: 709px; top: 403px; width: 20px"
+                            onclick="infofortsel(2, 8)"
+                            onmouseover="infofortover(2, 8)"
+                            onmouseout="infofortout(2, 8)">
+                        
+                    </div>
+
+                    <div id="page_3_6" style="display: none;">
+                        <img id="i_1" src="assets/item14.png" width="40px" style="position: absolute;left: 199px;top: 136px;" onmouseover="infoiover(14, 1)" onmouseout="infoitout(14, 1)" title="Pesca" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_2" src="assets/item14.png" width="40px" style="position: absolute;left: 79px;top: 417px;" onmouseover="infoiover(14, 2)" onmouseout="infoitout(14, 2)" title="Pesca" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_3" src="assets/item14.png" width="40px" style="position: absolute;left: 336px;top: 395px;" onmouseover="infoiover(14, 3)" onmouseout="infoitout(14, 3)" title="Pesca" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_4" src="assets/item14.png" width="40px" style="position: absolute;left: 718px;top: 433px;" onmouseover="infoiover(14, 4)" onmouseout="infoitout(14, 4)" title="Pesca" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_5" src="assets/item125.png" width="30px" style="position: absolute;left: 387px;top: 366px;" onmouseover="infoiover(125, 5)" onmouseout="infoitout(125, 5)" title="Exportación" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_6" src="assets/item125.png" width="30px" style="position: absolute;left: 626px;top: 445px;" onmouseover="infoiover(125, 6)" onmouseout="infoitout(125, 6)" title="Exportación" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_7" src="assets/item125.png" width="30px" style="position: absolute;left: 605px;top: 508px;" onmouseover="infoiover(125, 7)" onmouseout="infoitout(125, 7)" title="Exportación" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_8" src="assets/item13.png" width="30px" style="position: absolute;left: 639px;top: 383px;" onmouseover="infoiover(13, 8)" onmouseout="infoitout(13, 8)" title="Ganadería" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_9" src="assets/item13.png" width="30px" style="position: absolute;left: 635px;top: 295px;" onmouseover="infoiover(13, 9)" onmouseout="infoitout(13, 9)" title="Ganadería" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_10" src="assets/item13.png" width="30px" style="position: absolute;left: 485px;top: 350px;" onmouseover="infoiover(13, 10)" onmouseout="infoitout(13, 10)" title="Ganadería" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_11" src="assets/item13.png" width="30px" style="position: absolute;left: 300px;top: 300px;" onmouseover="infoiover(13, 11)" onmouseout="infoitout(13, 11)" title="Ganadería" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_12" src="assets/item20.png" width="30px" style="position: absolute;left: 200px;top: 400px;" onmouseover="infoiover(20, 12)" onmouseout="infoitout(20, 12)" title="Turismo" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_13" src="assets/item20.png" width="30px" style="position: absolute;left: 350px;top: 254px;" onmouseover="infoiover(20, 13)" onmouseout="infoitout(20, 13)" title="Turismo" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_14" src="assets/item20.png" width="30px" style="position: absolute;left: 446px;top: 308px;" onmouseover="infoiover(20, 14)" onmouseout="infoitout(20, 14)" title="Turismo" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_15" src="assets/item77.png" width="40px" style="position: absolute;left: 221px;top: 430px;" onmouseover="infoiover(77, 15)" onmouseout="infoitout(77, 15)" title="Vino" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_16" src="assets/item77.png" width="40px" style="position: absolute;left: 369px;top: 200px;" onmouseover="infoiover(77, 16)" onmouseout="infoitout(77, 16)" title="Vino" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_17" src="assets/item77.png" width="40px" style="position: absolute;left: 510px;top: 278px;" onmouseover="infoiover(77, 17)" onmouseout="infoitout(77, 17)" title="Vino" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_18" src="assets/item9.png" width="30px" style="position: absolute;left: 738px;top: 247px;" onmouseover="infoiover(9, 18)" onmouseout="infoitout(9, 18)" title="Trigo" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_19" src="assets/item9.png" width="30px" style="position: absolute;left: 547px;top: 290px;" onmouseover="infoiover(9, 19)" onmouseout="infoitout(9, 19)" title="Trigo" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_20" src="assets/item9.png" width="30px" style="position: absolute;left: 532px;top: 497px;" onmouseover="infoiover(9, 20)" onmouseout="infoitout(9, 20)" title="Trigo" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_21" src="assets/item9.png" width="30px" style="position: absolute;left: 295px;top: 371px;" onmouseover="infoiover(9, 21)" onmouseout="infoitout(9, 21)" title="Trigo" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_22" src="assets/item134.png" width="30px" style="position: absolute;left: 227px;top: 270px;" onmouseover="infoiover(134, 22)" onmouseout="infoitout(134, 22)" title="Estrella de Mar" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_23" src="assets/item61.png" width="30px" style="position: absolute;left: 495px;top: 494px;" onmouseover="infoiover(61, 23)" onmouseout="infoitout(61, 23)" title="Exportación" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_24" src="assets/item92.png" width="30px" style="position: absolute;left: 109px;top: 414px;" onmouseover="infoiover(92, 24)" onmouseout="infoitout(92, 24)" title="Aguila Real" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_25" src="assets/item87.png" width="30px" style="position: absolute;left: 303px;top: 255px;" onmouseover="infoiover(87, 25)" onmouseout="infoitout(87, 25)" title="Ganado Bovino" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_26" src="assets/item129.png" width="20px" style="position: absolute;left: 742px;top: 292px;" onmouseover="infoiover(129, 26)" onmouseout="infoitout(129, 26)" title="Gas" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_27" src="assets/item44.png" width="30px" style="position: absolute;left: 223px;top: 343px;" onmouseover="infoiover(44, 27)" onmouseout="infoitout(44, 27)" title="Lobo" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_28" src="assets/item44.png" width="30px" style="position: absolute;left: 688px;top: 295px;" onmouseover="infoiover(44, 28)" onmouseout="infoitout(44, 28)" title="Lobo" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_29" src="assets/item84.png" width="30px" style="position: absolute;left: 674px;top: 250px;" onmouseover="infoiover(84, 29)" onmouseout="infoitout(84, 29)" title="Petróleo" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_30" src="assets/item131.png" width="30px" style="position: absolute;left: 121px;top: 362px;" onmouseover="infoiover(131, 30)" onmouseout="infoitout(131, 30)" title="Caballos Salvajes" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_31" src="assets/item132.png" width="31px" style="position: absolute;left: 580px;top: 323px;" onmouseover="infoiover(132, 31)" onmouseout="infoitout(132, 31)" title="Oso Pardo" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                            
+                        <img id="i_32" src="assets/item13.png" width="30px" style="position: absolute;left: 150px;top: 320px;" onmouseover="infoiover(13, 32)" onmouseout="infoitout(13, 32)" title="Ganadería" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_33" src="assets/item11.png" width="30px" style="position: absolute;left: 180px;top: 340px;" onmouseover="infoiover(11, 33)" onmouseout="infoitout(13, 33)" title="Minería" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_34" src="assets/item52.png" width="30px" style="position: absolute;left: 400px;top: 240px;" onmouseover="infoiover(52, 34)" onmouseout="infoitout(52, 34)" title="Venado" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_35" src="assets/item135.png" width="30px" style="position: absolute;left: 360px;top: 290px;" onmouseover="infoiover(135, 35)" onmouseout="infoitout(135, 35)" title="Garza" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_36" src="assets/item77.png" width="40px" style="position: absolute;left: 560px;top: 408px;" onmouseover="infoiover(77, 36)" onmouseout="infoitout(77, 36)" title="Vino" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_37" src="assets/item136.png" width="20px" style="position: absolute;left: 530px;top: 388px;" onmouseover="infoiover(136, 37)" onmouseout="infoitout(136, 37)" title="Naranjas" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+
+                        <img id="i_38" src="assets/item115.png" width="20px" style="position: absolute;left: 770px;top: 378px;" onmouseover="infoiover(115, 38)" onmouseout="infoitout(115, 38)" title="Tabaco" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                        <img id="i_39" src="assets/item115.png" width="20px" style="position: absolute;left: 690px;top: 406px;" onmouseover="infoiover(115, 39)" onmouseout="infoitout(115, 39)" title="Tabaco" onmouseup="handleIconMoveUp(1)" onmousedown="handleIconMoveDown(event,1)" ondragstart="return false;">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <div id="fortAlam"
+            style="position: absolute; left: 590px; top: 130px; background-color: #FFF; border-radius: 5px; width: 246px; height:181px; display: none; border: solid 1px #ccc; ">
+            <img id="fortAlamImg" src="" width="240px" height="175px" style="margin-left: 3px; margin-top: 3px">
+        </div>
+
+        <div id="cityDiv"
+            style="position: absolute; left: 130px; top: 70px; width:626px; height:405px; background-image:url('assets/submain1.png'); display:none;">
+            <div style=" writing-mode: vertical-rl; text-orientation: downright; transform: rotate(180deg); font-size:61px; color:#FFF; 
+             border-radius: 10px;  height:380px; margin-left: 10px;">
+                Sur de Europa
+            </div>
+            <div style="border:#cc9900 solid 1px; padding-top:20px; margin-top:20px; margin-left:25px; height:330px; width:490px;"
+                id="">
+                <div style="height: 165px; width: 483px; font-family:''; font-size: 14px; overflow-y: scroll; padding-left: 3px; padding-right: 3px"
+                    id="cityTxt"></div>
+                <div style="height: 155px; width: 490px; overflow-x: auto; margin-top:10px">
+                    <img src="" width="200px" height="150px" style="margin-left: 5px" id="cityImg_1">
+                    <img src="" width="200px" height="150px" style="margin-left: 5px" id="cityImg_2">
+                    <img src="" width="200px" height="150px" style="margin-left: 5px" id="cityImg_3">
+                    <img src="" width="200px" height="150px" style="margin-left: 5px" id="cityImg_4">
+                </div>
+                <div style="position: absolute; left: 560px; top: 335px"><img src="assets/close.png" width="32px"
+                        onclick="selmapInfoHide()"></div>
+            </div>
+        </div>
+        <div style="position: absolute; left: 354px; top:109px; width: 366px; height: 383px; background-image: url('assets/ayude.png'); display: none;"
+            id="ayude">
+            <div style="height: 50px" onclick="ayudeClose()"></div>
+        </div>
+        <div style="position: absolute; left: 780px; top: 1px; display: none; width: 126px; height: 171px; background-image: url(assets/ico.png)"
+            id="icoDiv" rol=0>
+            <div style="height: 50px;  " onclick="icoClose()"></div>
+            <div style="height: 40px;  " onclick="icoSpeak()"></div>
+            <div style="height: 70px; " onclick="ayudeShow()"></div>
+        </div>
+
+        <div id="right_bar" style="width: 50px; cursor:pointer; display:none">
+            <div style="z-index:400; width: 33px; height: 135px; margin-top: 330px; background-image:url('assets/menu1.png'); display:flex; align-items:center; justify-content:center;"
+                class="menuDiv">
+                <div class="menu" onclick="subMenu(1)">ACTIVIDADES</div>
+            </div>
+            <div style="width: 33px; height: 91px; background-image:url('assets/menu2.png'); display:flex; align-items:center; justify-content:center; "
+                class="menuDiv">
+                <div class="menu" onclick="subMenu(2)">MENU</div>
+            </div>
+        </div>
+        <div id="xxx" style="width: calc(100% - 900px); border:solid 0px; z-index:100; background:#FFF"></div>
+    </div>
+</body>
+
+</html>

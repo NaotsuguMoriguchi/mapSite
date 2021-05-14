@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Perú</title>
+</head>
+<style>
+    @keyframes símboloKey {
+        from {
+            margin-left: -190px;
+        }
+
+        to {
+            margin-left: 0px;
+        }
+    }
+
+    input {
+        text-align: center;
+    }
+
+    img {
+        cursor: pointer;
+    }
+
+    /* The element to apply the animation to */
+    .símbolo_class {
+        position: absolute;
+        animation-name: símboloKey;
+        margin-left: -190px;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        margin-top: 30px;
+    }
+</style>
+<script>
+    function selmap(sel) {
+        document.getElementById("m_" + sel).src = "assets/m" + sel + "_2.png";
+    }
+    function unselmap(sel) {
+        document.getElementById("m_" + sel).src = "assets/m" + sel + "_1.png";
+    }
+    function selpage(url) {
+        location = "./" + url + "/";
+    }
+</script>
+
+<body>
+    <div id="símbolo" class="símbolo_class" style="z-index: 99999999999999999">
+        <img src="assets/Símbolo.png" width="200px">
+    </div>
+
+    <div>
+        <img src="assets/bg.png" width="800px">
+        <img id="m_1" src="assets/m1_1.png" onmouseover="selmap(1)" onmouseout="unselmap(1)"
+            style="position: absolute; left: 10px; top: 522px; width: 796px;">
+        <img id="m_2" src="assets/m2_1.png" onmouseover="selmap(2)" onmouseout="unselmap(2)"
+            style="position: absolute; left: 217px; top: 328px; width: 101px;" onclick="selpage('surDeAmerica')"
+            title="America del sur">
+        <img id="m_3" src="assets/m3_1.png" onmouseover="selmap(3)" onmouseout="unselmap(3)"
+            style="position: absolute; left: 36px; top: 67px; width: 316px;" onclick="selpage('norteDeAmerica')"
+            title="America del Norte">
+        <img id="m_4" src="assets/m4_1.png" onmouseover="selmap(4)" onmouseout="unselmap(4)"
+            style="position: absolute; left: 5px; top: 21px; width: 802px;">
+        <img id="m_5" src="assets/m5_1.png" onmouseover="selmap(5)" onmouseout="unselmap(5)"
+            style="position: absolute; left: 629px; top: 376px; width: 141px;" onclick="selpage('Australia')"
+            title="Australia">
+        <img id="m_6" src="assets/m6_1.png" onmouseover="selmap(6)" onmouseout="unselmap(6)"
+            style="position: absolute; left: 404px; top: 330px; width: 93px;" onclick="selpage('surDeAfrica')">
+        <img id="m_7" src="assets/m7_1.png" onmouseover="selmap(7)" onmouseout="unselmap(7)"
+            style="position: absolute; left: 352px; top: 267px; width: 145px;" onclick="selpage('noteDeAfrica')"
+            title="Norte De Africa">
+        <img id="m_8" src="assets/m8_1.png" onmouseover="selmap(8)" onmouseout="unselmap(8)"
+            style="position: absolute; left: 575px; top: 289px; width: 171px;" onclick="selpage('suresteDeAsia')"
+            title="Sureste Asiatico">
+        <img id="m_9" src="assets/m9_1.png" onmouseover="selmap(9)" onmouseout="unselmap(9)"
+            style="position: absolute; left: 448px; top: 258px; width: 66px;" onclick="selpage('wsAsia')"
+            title="suroeste Asiatico">
+        <img id="m_10" src="assets/m10_1.png" onmouseover="selmap(10)" onmouseout="unselmap(10)"
+            style="position: absolute; left: 498px; top: 267px; width: 85px;" onclick="selpage('surDeAsia')"
+            title="Sur de Asia">
+        <img id="m_11" src="assets/m11_1.png" onmouseover="selmap(11)" onmouseout="unselmap(11)"
+            style="position: absolute; left: 532px; top: 196px; width: 163px;" onclick="selpage('esteDeAsia')"
+            title="Este De Asia">
+        <img id="m_12" src="assets/m12_1.png" onmouseover="selmap(12)" onmouseout="unselmap(12)"
+            style="position: absolute; left: 428px; top: 50px; width: 358px;" onclick="selpage('esteDeEurop')"
+            title="Rusia y yecinos">
+        <img id="m_13" src="assets/m13_1.png" onmouseover="selmap(13)" onmouseout="unselmap(13)"
+            style="position: absolute; left: 365px; top: 231px; width: 86px;" onclick="selpage('wsDeEurop')"
+            title="Norte De Europa">
+        <img id="m_14" src="assets/m14_1.png" onmouseover="selmap(14)" onmouseout="unselmap(14)"
+            style="position: absolute; left: 347px; top: 135px; width: 144px;" onclick="selpage('westDeEurop')"
+            title="Sur De Europa">
+
+    </div>
+</body>
