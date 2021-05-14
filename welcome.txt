@@ -1,0 +1,28 @@
+Welcome!
+
+I developed a vr school and vr hospital management system this time using WEBRTC.
+I would like you to introduce this system to schools or hospitals.
+Also, I would like to use skype for faster communication.
+
+My skype : viper.it.dev@gmail.com, moon.rider.dev@gmail.com
+
+- video education system
+A video education system has been developed for learners  suffering from Covid-19.
+I will briefly introduce the system.
+The lecturer sets a learning title and content, a learning time, and creates a learning room.
+And the lecturer tell learners  (who paid for the learning fee)to room information.
+In the learning room, video calls and charting are held between lecturer and learners  .
+lecturer share materials such as videos and documents on the screen so that learners can see them.
+(This is similar to google meeting or zoom meeting.)
+I think this system can help your learn English.
+
+- video therapy and VR hospital system
+A video therapy and VR hospital system has been developed for patients suffering from Covid-19.
+Wouldn't you like to run a VR hospital?
+Let me briefly introduce the system.
+Users know about the skills of hospitals and doctors through the VR hospital site.
+In addition, users can enter the VR treatment room and receive a diagnosis through video calls with doctors. 
+This system can be used not only on a computer, but also on a mobile phone, so patients can get help from doctors even when they are far away from the hospital.
+Doctors simply set up a brief self-introduction and treatment section, and create a treatment room.
+Then, the treatment room information will be disclosed on the site, and the patients will visit to you.
+I think this system will help your business.
